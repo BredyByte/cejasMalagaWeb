@@ -1,8 +1,8 @@
-import { Footer } from './components';
+import { LinkButton, CircleButton } from './components'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
 
     </div>
   );

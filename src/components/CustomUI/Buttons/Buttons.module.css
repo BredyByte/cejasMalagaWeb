@@ -1,0 +1,52 @@
+.linkButton {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+}
+.linkButton span {
+  font-weight: 500;
+  font-size: 19px;
+  transition: color .3s;
+}
+.linkButton i {
+  color: inherit;
+  transition: color .3s;
+}
+.linkButton:hover i, .linkButton:hover span {
+  color: #FFA52D ;
+}
+
+.circleButton {
+  position: relative;
+  padding: 10px 0;
+}
+.circleButton p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  z-index: 2;
+  padding: 5px 0;
+  transition: all .3s;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.circleButton .circle {
+  position: absolute;
+  top: -2px;
+  right: -40px;
+  border: 2px solid #FFA52D;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  background: transparent;
+  transition: all .3s;
+}
+
+.circleButton:hover p{
+  border: 2px solid #FFA52D ;
+}
+.circleButton:hover .circle{
+  background: rgba(255,165,45,1);
+}
+
