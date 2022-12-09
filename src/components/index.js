@@ -1,2 +1,2 @@
 export { default as Footer } from './Footer';
-export { default as Head } from './Head/head';
+export { default as Home } from './Home';
