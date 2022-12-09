@@ -1,10 +1,11 @@
-import { Footer } from './components'
+import { Footer, Head } from './components';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Footer/>
+      <Head />
+      <Footer />
     </div>
   );
 }
