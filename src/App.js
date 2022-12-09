@@ -1,4 +1,4 @@
-import { Footer, Head } from './components';
+import { Head, Footer } from './components';
 import './App.css';
 
 function App() {
