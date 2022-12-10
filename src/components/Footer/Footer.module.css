@@ -3,51 +3,40 @@
   list-style-type: none;
 }
 
-.list_container {
+.listContainer {
   align-items: center;
   justify-content: center;
   display: flex;
 }
-
-.logo_container {
-  padding-top: 178px;
-}
-.map {
-  margin: 20px;
-  width: 641px;
-  height: 343px;
-}
-
-.mapSide {
-  display: flex;
+.logoContainer {
   justify-content: center;
-}
-
-.textSide {
-  text-align: left;
-  margin: 0px 70px;
-}
-
-.starLogo {
   display: flex;
-  align-items: center;
+  margin: 0 auto;
 }
-
-.star_image {
-  height: 10%;
+.logo {
+  width: 200px;
 }
-
-.titleUpperMap {
-  display: flex;
-  justify-content: center;
-}
-
-.title_contakti {
-  font-size: 21px;
-}
-
-.titleCallMe {
+.bottomText {
   text-align: center;
-  font-size: 64px;
-  border-left: 3px orange solid;
+  justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .list {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 630px) {
+  .list {
+    font-size: 14px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 560px) {
+  .list {
+    font-size: 14px;
+    padding: 3px;
+  }
 }
