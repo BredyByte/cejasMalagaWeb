@@ -151,39 +151,26 @@ template {
   display: none;
 }
 html {
+  margin: 0;
   box-sizing: border-box;
 }
 *,*::before,*::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family:'Montserrat', sans-serif;
   color: #1E1E1E;
-  margin: 0;
-  padding: 0;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-h1,h2,h3,h4,h5,h6 {
-  margin: 0;
-}
 ul li {
   list-style: none;
-  margin: 0;
 }
 .container {
   max-width: 1040px;
   margin: 0 auto;
-}
-.section {
-  position: relative;
-  padding-bottom: 140px;
-}
-@media(max-width: 1040px) {
-  .section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }

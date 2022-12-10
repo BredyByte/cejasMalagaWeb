@@ -1,0 +1,36 @@
+.root {
+  padding: 0 120px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.logo {
+  width: 300px;
+  height: 300px;
+}
+.menu {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.linkList {
+  text-align: center;
+}
+.linkItem + .linkItem{
+  margin-top: 15px;
+}
+@media (max-width: 920px) {
+  .root {
+    padding: 0 20px 70px;
+  }
+}
+@media (max-width: 560px) {
+  .menu {
+    display: none;
+  }
+}

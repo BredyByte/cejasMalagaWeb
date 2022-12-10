@@ -1,4 +1,4 @@
-import { SectionTitle } from '../';
+import { SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
 import styles from './maps.module.css';
 
@@ -32,7 +32,6 @@ export const Maps = () => {
   return (
     <main>
       <SectionTitle title={'Контакты'} subtitleFirst={'Свяжитесь со мной'} />
-
       <section className={styles.mapSide}>
         <iframe
           className={styles.map}
