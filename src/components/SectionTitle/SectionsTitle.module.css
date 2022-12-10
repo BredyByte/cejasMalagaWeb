@@ -1,6 +1,7 @@
 .root {
   border-left: 3px solid #FFA52D;
   padding-left: 30px;
+  margin-bottom: 30px;
 }
 .title {
   font-size: 15px;
@@ -12,4 +13,8 @@
 .subtitle {
   font-size: 64px;
   font-weight: 300;
+}
+.subtitle .second {
+  display: block;
+  padding-left: 25%;
 }

@@ -1,9 +1,9 @@
-import { SectionTitle  } from './components'
+import { Feedback, SectionTitle } from './components'
 
 function App() {
   return (
     <div className="App container">
-      <SectionTitle text={"Co мной ты будешь самой яркой"}/>
+      <Feedback/>
     </div>
   );
 }
