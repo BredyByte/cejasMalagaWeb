@@ -3,7 +3,9 @@ import { CircleButton } from './components';
 function App() {
   return (
     <div className="App">
-      <CircleButton text={"Click me"}/>
+      <Feedback/>
+      <Maps/>
+      <Footer/>
     </div>
   )
 }

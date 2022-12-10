@@ -1,5 +1,5 @@
 .root {
-  padding: 0 50px 50px;
+  padding-bottom: 50px;
   position: relative;
   margin-bottom: 150px;
 }
@@ -40,14 +40,6 @@
   right: 0;
   bottom: 0;
 }
-@media(max-width: 920px) {
-  .root {
-    padding: 0 20px 50px;
-  }
-  .imgContainer {
-    min-width: 0;
-  }
-}
 @media(max-width: 560px) {
   .contentContainer {
     padding-top: 50px;
@@ -70,5 +62,10 @@
 
   .buttonContainer {
     bottom: -20px;
+  }
+}
+@media(max-width: 920px) {
+  .imgContainer {
+    min-width: 0;
   }
 }

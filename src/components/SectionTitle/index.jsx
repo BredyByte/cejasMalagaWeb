@@ -1,8 +1,8 @@
 import styles from './SectionsTitle.module.css';
 
-export const SectionTitle = ({subtitleFirst, subtitleSecond, title}) => {
+export const SectionTitle = ({subtitleFirst, subtitleSecond, title, isMargin}) => {
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} ${isMargin ? styles.marginLeft70: ''}` }>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.subtitleContainer}>
         <h3 className={styles.subtitle}>

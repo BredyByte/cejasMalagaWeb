@@ -3,6 +3,9 @@
   padding-left: 30px;
   margin-bottom: 70px;
 }
+.marginLeft70 {
+  margin-left: 70px;
+}
 .title {
   font-size: 15px;
   font-weight: 500;
@@ -50,5 +53,8 @@
   }
   .title {
     font-size: 12px;
+  }
+  .marginLeft70 {
+    margin-left: 0;
   }
 }
