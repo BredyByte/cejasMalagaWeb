@@ -1,9 +1,4 @@
-import { Feedback } from './components';
 function App() {
-  return (
-    <div className="App">
-      <Feedback/>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 export default App;

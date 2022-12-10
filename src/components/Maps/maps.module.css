@@ -1,0 +1,73 @@
+.list {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.map {
+  margin: 20px;
+  width: 641px;
+  height: 343px;
+}
+
+.mapSide {
+  display: flex;
+  justify-content: center;
+}
+
+.textSide,
+.textAppear {
+  text-align: left;
+  margin: 0px 70px;
+}
+
+.starLogo {
+  display: flex;
+  align-items: center;
+}
+
+.titleUpperMap {
+  display: flex;
+  justify-content: center;
+}
+
+.title_contakti {
+  font-size: 21px;
+}
+
+.titleCallMe {
+  text-align: center;
+  font-size: 64px;
+  border-left: 3px orange solid;
+}
+
+@media (max-width: 560px) {
+  .mapSide {
+    display: inline;
+  }
+  .map {
+    margin: 0 auto;
+    border: none;
+    padding: 25px;
+    width: 100%;
+  }
+  .textSide {
+    display: inline;
+  }
+
+  @media (max-width: 630px) {
+    .list {
+      font-size: 14px;
+      padding: 3px;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .list {
+      font-size: 14px;
+      padding: 3px;
+    }
+    .textAppear {
+      display: none;
+    }
+  }
+}
