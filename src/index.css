@@ -177,13 +177,3 @@ ul li {
   max-width: 1040px;
   margin: 0 auto;
 }
-.section {
-  position: relative;
-  padding-bottom: 140px;
-}
-@media(max-width: 1040px) {
-  .section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}

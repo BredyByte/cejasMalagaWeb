@@ -1,4 +1,4 @@
-import { SectionTitle, LinkButton } from '../'
+import { SectionTitle, LinkButton } from '../../components'
 import feedback1 from '../../assets/img/feedback1.jpeg';
 import feedback2 from '../../assets/img/feedback2.jpeg';
 import feedback3 from '../../assets/img/feedback3.jpeg';
@@ -27,7 +27,7 @@ const imgArr = [
 
 export const Feedback = () => {
   return (
-    <section className={`${styles.root} container section`}>
+    <section className={`${styles.root} container`}>
       <SectionTitle subtitleFirst={"Как отзываются"} subtitleSecond={"мои клиенты"} title={"Отзывы"} />
       <article className={styles.contentContainer}>
           {

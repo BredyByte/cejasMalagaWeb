@@ -1,6 +1,11 @@
+.root {
+  padding: 0 50px 50px;
+  position: relative;
+  margin-bottom: 150px;
+}
 .contentContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
   gap: 0 10px;
 }
@@ -9,11 +14,15 @@
   max-width: 260px;
   margin: 0;
   position: relative;
+  transition: transform .3s;
+}
+.imgContainer:hover {
+  transform: scale(1.05);
 }
 .img {
   width: 100%;
-  max-height: 350px;
   object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
 }
 .imgContainer:nth-child(1) , .imgContainer:nth-child(3) {
@@ -21,15 +30,20 @@
 }
 .buttonContainer {
   position: relative;
-  bottom: 0;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50px);
   display: inline-block;
 }
 .starsContainer {
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
-@media(max-width: 860px) {
+@media(max-width: 920px) {
+  .root {
+    padding: 0 20px 50px;
+  }
   .imgContainer {
     min-width: 0;
   }
@@ -40,7 +54,6 @@
   }
   .imgContainer {
     padding-top: 0;
-    justify-content: space-between;
   }
   .imgContainer:nth-child(1), .imgContainer:nth-child(3) {
     padding-top: 0;
@@ -51,12 +64,11 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .imgContainer:nth-child(2):hover {
+    transform: translateX(-50%) scale(1.05);
+  }
+
   .buttonContainer {
     bottom: -20px;
-  }
-  .starsContainer {
-    position: relative;
-    right: 0;
-    bottom: -40px;
   }
 }

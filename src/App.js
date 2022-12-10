@@ -1,4 +1,4 @@
-import { Feedback } from './components';
+import { Feedback } from './pages';
 function App() {
   return (
     <div className="App">
