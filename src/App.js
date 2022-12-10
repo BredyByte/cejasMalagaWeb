@@ -1,8 +1,8 @@
-import { Footer } from './components';
+import { Feedback } from './components';
 function App() {
   return (
     <div className="App">
-      <Footer />
+      <Feedback/>
     </div>
   );
 }

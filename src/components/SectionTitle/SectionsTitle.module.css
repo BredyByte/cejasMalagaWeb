@@ -1,7 +1,7 @@
 .root {
   border-left: 3px solid #FFA52D;
   padding-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .title {
   font-size: 15px;
@@ -17,4 +17,38 @@
 .subtitle .second {
   display: block;
   padding-left: 25%;
+}
+
+@media (max-width: 860px) {
+  .subtitle {
+    font-size: 48px;
+  }
+}
+@media (max-width: 560px) {
+  .root {
+    border-left: none;
+    padding-left: 0;
+    position: relative;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .subtitle .second {
+    padding-left: 0;
+  }
+  .subtitle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 3px;
+    background: #FFA52D;
+  }
+  .title {
+    font-size: 12px;
+  }
 }

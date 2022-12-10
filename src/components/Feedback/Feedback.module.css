@@ -1,3 +1,62 @@
-.root {
-
+.contentContainer {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  gap: 0 10px;
+}
+.imgContainer {
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0;
+  position: relative;
+}
+.img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
+}
+.imgContainer:nth-child(1) , .imgContainer:nth-child(3) {
+  padding-top: 140px;
+}
+.buttonContainer {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50px);
+  display: inline-block;
+}
+.starsContainer {
+  float: right;
+}
+@media(max-width: 860px) {
+  .imgContainer {
+    min-width: 0;
+  }
+}
+@media(max-width: 560px) {
+  .contentContainer {
+    padding-top: 50px;
+  }
+  .imgContainer {
+    padding-top: 0;
+    justify-content: space-between;
+  }
+  .imgContainer:nth-child(1), .imgContainer:nth-child(3) {
+    padding-top: 0;
+  }
+  .imgContainer:nth-child(2) {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .buttonContainer {
+    bottom: -20px;
+  }
+  .starsContainer {
+    position: relative;
+    right: 0;
+    bottom: -40px;
+  }
 }

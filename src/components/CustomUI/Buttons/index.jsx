@@ -1,8 +1,8 @@
 import styles from './Buttons.module.css';
 
-export const LinkButton = ({text}) => {
+export const LinkButton = ({text, link}) => {
   return (
-    <a className={styles.linkButton} href="#" target="_blank">
+    <a className={styles.linkButton} href={link} target="_blank">
       <span>{text}</span>
       <i className="fa-solid fa-arrow-right-long"></i>
     </a>
