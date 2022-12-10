@@ -1,5 +1,4 @@
-import { Footer } from './components';
-import './App.css';
+import { Footer }  from './components';
 function App() {
   return (
     <div className="App">
@@ -7,5 +6,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

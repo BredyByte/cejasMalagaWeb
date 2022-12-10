@@ -1,15 +1,14 @@
 import styles from './Footer.module.css';
 import logo from '../Logo/CM.png';
 import logoStar from '../Logo/star.png';
+import { SectionTitle } from '../'
+import {ReactComponent as Logo } from '../../assets/img/Logo.svg'
+import {ReactComponent as ListStar } from '../../assets/img/ListStar.svg'
 
 export const Footer = (props) => {
   return (
     <>
-      <section className={styles.titleUpperMap}>
-        <p className={styles.title_contakti}>Контакты</p>
-        <p className={styles.titleCallMe}>Свяжитесь со мной</p>
-      </section>
-
+      <SectionTitle title={"Контакты"} subtitleFirst={"Свяжитесь со мной"}/>
       <section className={styles.mapSide}>
         <iframe
           className={styles.map}
@@ -20,7 +19,7 @@ export const Footer = (props) => {
           </p>
           <p>в будние дни с 10:00-20:00</p>
           <div className={styles.starLogo}>
-            <img className={styles.star_image} src={logoStar} alt="star" />
+            <ListStar/>
             <li className={styles.list}>calle cristo de la epidemia 93</li>
           </div>
           <div className={styles.starLogo}>
@@ -38,7 +37,7 @@ export const Footer = (props) => {
         </side>
       </section>
       <figure className={styles.logo_container}>
-        <img className={styles.logo} src={logo} alt="LOGO" />
+        <Logo/>
       </figure>
       <section className={styles.list_container}>
         <li className={styles.list}>Обо мне</li>
