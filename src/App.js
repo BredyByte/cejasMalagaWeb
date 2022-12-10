@@ -1,4 +1,4 @@
-import { Footer }  from './components';
+import { Footer } from './components';
 function App() {
   return (
     <div className="App">
