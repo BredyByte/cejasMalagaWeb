@@ -1,9 +1,9 @@
 import { Maps, Feedback, Footer } from './pages'
+import { CircleButton } from './components';
 function App() {
   return (
     <div className="App">
-      <Feedback/>
-      <Footer/>
+      <CircleButton text={"Click me"}/>
     </div>
   )
 }
