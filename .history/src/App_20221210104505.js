@@ -1,4 +1,4 @@
-import { Footer } from './components';
+import Footer from './components';
 import './App.css';
 function App() {
   return (

@@ -1,0 +1,15 @@
+.list {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.list_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.map {
+  width: 641px;
+  height: 343px;
+}
