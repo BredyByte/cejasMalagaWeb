@@ -1,0 +1,30 @@
+.list {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.list_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.map {
+  margin: 20px;
+  width: 641px;
+  height: 343px;
+}
+
+.mapSide {
+  display: flex;
+  justify-content: center;
+}
+
+.textSide {
+  text-align: left;
+  margin: 0px 77px;
+}
+
+.starLogo {
+  display: inline-flex;
+}

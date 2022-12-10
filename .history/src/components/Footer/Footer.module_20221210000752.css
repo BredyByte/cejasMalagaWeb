@@ -1,0 +1,52 @@
+.list {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.list_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.logo_container {
+  padding-top: 178px;
+}
+.map {
+  margin: 20px;
+  width: 641px;
+  height: 343px;
+}
+
+.mapSide {
+  display: flex;
+  justify-content: center;
+}
+
+.textSide {
+  text-align: left;
+  margin: 0px 70px;
+}
+
+.starLogo {
+  display: flex;
+  align-items: center;
+}
+
+.star_image {
+  height: 10%;
+}
+
+.titleUpperMap {
+}
+
+.title_contakti {
+  text-align: left;
+  font-size: 21px;
+}
+
+.titleCallMe {
+  text-align: left;
+  font-size: 64px;
+  border-left: 3px orange solid;
+}
