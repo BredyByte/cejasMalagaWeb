@@ -1,5 +1,5 @@
 .root {
-  margin-bottom: 150px;
+  padding-bottom: 70px;
 }
 .contentContainer {
   display: flex;
@@ -59,6 +59,9 @@
   margin-bottom: 45px;
 }
 @media(max-width: 1040px) {
+  .root {
+    padding-bottom: 0;
+  }
   .contentContainer {
     flex-direction: column;
     align-items: center;

@@ -178,6 +178,14 @@ ul li {
   max-width: 1040px;
   margin: 0 auto;
 }
+.section {
+  margin-bottom: 150px;
+}
+@media(max-width: 560px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
 @media(max-width: 1040px) {
   .container {
     padding-left: 20px!important;

@@ -5,6 +5,8 @@ function App() {
     <div className="App">
       <Feedback/>
       <Questionnaire/>
+      <Maps/>
+      <Footer/>
     </div>
   )
 }

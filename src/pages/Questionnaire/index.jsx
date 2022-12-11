@@ -7,7 +7,7 @@ import styles from './Questionnaire.module.css';
 
 export const Questionnaire = () => {
   return (
-    <section className={`${styles.root} container`}>
+    <section className={`${styles.root} container section`}>
       <SectionTitle title="Обратная связь" subtitleFirst="Остались" subtitleSecond="вопросы" isMargin={true}/>
       <article className={styles.contentContainer}>
         <aside className={styles.galleryContainer}>

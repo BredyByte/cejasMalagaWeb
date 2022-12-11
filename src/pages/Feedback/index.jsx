@@ -27,20 +27,22 @@ const imgArr = [
 
 export const Feedback = () => {
   return (
-    <section className={`${styles.root} container`}>
+    <section className={`${styles.root} container section`}>
       <SectionTitle subtitleFirst={"Как отзываются"} subtitleSecond={"мои клиенты"} title={"Отзывы"} />
       <article className={styles.contentContainer}>
-          {
-            imgArr.map(i => (
-              <figure className={styles.imgContainer} key={i.id}>
-                <img className={styles.img} src={i.src} alt={i.alt} />
-              </figure>
-            ))
-          }
+        <figure className={styles.imgContainer}>
+          <img className={styles.img} src={feedback1} alt="" />
+        </figure>
+        <figure className={styles.imgContainer}>
+          <img className={styles.img} src={feedback2} alt="" />
+        </figure>
+        <figure className={styles.imgContainer}>
+          <img className={styles.img} src={feedback3} alt="" />
+        </figure>
       </article>
-      <span className={styles.buttonContainer}>
-          <LinkButton text="Все отзывы" className="text" link={"https://www.instagram.com/stories/highlights/17948891671106395/"}/>
-        </span>
+      <aside className={styles.buttonContainer}>
+        <LinkButton text="Все отзывы" className="text" link={"https://www.instagram.com/stories/highlights/17948891671106395/"}/>
+      </aside>
       <aside className={styles.starsContainer}>
         <SmallStar/>
         <BigStar/>
