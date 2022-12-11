@@ -10,7 +10,7 @@ import { ReactComponent as Start } from '../../assets/img/TrainingStar.svg';
 
 export const Training = () => {
   return (
-    <section className={`${styles.root} container`}>
+    <section className={`${styles.root} container section`}>
       <SectionTitle title="Обучение" subtitleFirst="Представляю вам" subtitleSecond="базовый курс"/>
       <article className={styles.contentContainer}>
         <figure className={styles.imgContainer}>
