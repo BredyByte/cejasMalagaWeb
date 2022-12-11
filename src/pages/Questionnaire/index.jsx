@@ -1,4 +1,4 @@
-import { CircleButton, SectionTitle, ContactForm } from '../../components';
+import { SectionTitle, ContactForm } from '../../components';
 import { ReactComponent as QuestElipsWithStar } from '../../assets/img/QuestElipsWithStar.svg'
 import questSecImg1 from '../../assets/img/questSecImg1.png';
 import questSecImg2 from '../../assets/img/questSecImg2.png';
