@@ -84,7 +84,6 @@
   font-weight: 400;
   line-height: 1.6;
   text-align: center;
-  text-transform: uppercase;
 }
 .circleButton:hover .circle {
   width: 100%;

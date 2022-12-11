@@ -1,11 +1,10 @@
-import { Maps, Feedback, Footer } from './pages'
-import { CircleButton } from './components';
+import { Maps, Feedback, Footer, Questionnaire } from './pages'
+import { ContactForm, Checkbox } from './components';
 function App() {
   return (
     <div className="App">
       <Feedback/>
-      <Maps/>
-      <Footer/>
+      <Questionnaire/>
     </div>
   )
 }

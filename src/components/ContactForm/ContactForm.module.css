@@ -1,0 +1,39 @@
+.root {
+
+}
+.inputContainer {
+  position: relative;
+  margin: 45px 0;
+}
+.input {
+  resize: none;
+  background: none;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid #FFA52D;
+  margin: 25px 0;
+}
+.input:focus {
+  outline: none;
+}
+.label {
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+.input:focus ~ .label {
+  top: -20px;
+  font-size: 12px;
+}
+.checkboxContainer {
+  margin-bottom: 30px;
+}
+

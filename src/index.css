@@ -2,7 +2,6 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
 body {
   margin: 0;
 }
@@ -158,6 +157,11 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+
+}
+*::selection {
+  color: #fff;
+  background: rgba(255, 180, 183);
 }
 body {
   font-family:'Montserrat', sans-serif;
@@ -176,7 +180,7 @@ ul li {
 }
 @media(max-width: 1040px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
   }
 }

@@ -1,4 +1,6 @@
 .root {
+  padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 50px;
   position: relative;
   margin-bottom: 150px;
@@ -68,4 +70,6 @@
   .imgContainer {
     min-width: 0;
   }
+}
+@media(max-width: 1040px) {
 }

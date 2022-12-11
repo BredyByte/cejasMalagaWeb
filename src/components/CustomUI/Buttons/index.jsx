@@ -10,9 +10,9 @@ export const LinkButton = ({text, link}) => {
   );
 }
 
-export const CircleButton = ({text}) => {
+export const CircleButton = ({text, type}) => {
   return (
-    <button className={styles.circleButton}>
+    <button className={styles.circleButton} type={type}>
       <span className={styles.circle} aria-hidden="true">
         <span className={`${styles.arrow} ${styles.icon}`}></span>
       </span>
