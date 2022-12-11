@@ -49,7 +49,6 @@
 }
 .formContainer {
   width: 320px;
-  height: 480px;
   z-index: 1;
 }
 .announcement {
@@ -62,6 +61,7 @@
   .root {
     padding-bottom: 0;
   }
+
   .contentContainer {
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,10 @@
     min-height: 550px;
     margin-bottom: 100px;
   }
+  .formContainer {
+    width: 50%;
+    height: auto;
+  }
   .announcement {
     margin: 0 auto 45px;
     text-align: center;
@@ -78,5 +82,15 @@
   .imgContainer:nth-child(2) {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media(max-width: 860px) {
+  .formContainer {
+    width: 80%;
+  }
+}
+@media(max-width: 560px) {
+  .formContainer {
+    width: 100%;
   }
 }

@@ -29,10 +29,11 @@
   -webkit-transition: 300ms ease all;
   transition: 300ms ease all;
 }
-.input:focus ~ .label {
+.input:focus ~ .label, .input.active ~ .label{
   top: -20px;
   font-size: 12px;
 }
+
 .checkboxContainer {
   margin-bottom: 30px;
 }

@@ -160,8 +160,12 @@ html {
 
 }
 *::selection {
-  color: #fff;
-  background: rgba(255, 180, 183);
+  color: #000;
+  background: rgba(255, 180, 183, 0.5);
+}
+input:-webkit-autofill
+{
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 180, 183, 0.5) inset !important;
 }
 body {
   font-family:'Montserrat', sans-serif;
