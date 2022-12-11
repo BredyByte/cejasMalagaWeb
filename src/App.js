@@ -4,6 +4,10 @@ function App() {
   return (
     <div className="App">
       <Training/>
+      <Feedback/>
+      <Questionnaire/>
+      <Maps/>
+      <Footer/>
     </div>
   )
 }
