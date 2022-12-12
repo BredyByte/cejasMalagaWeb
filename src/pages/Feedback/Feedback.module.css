@@ -1,7 +1,5 @@
 .root {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 70px;
+  padding: 0 70px 70px 70px;
   position: relative;
 }
 .contentContainer {
@@ -51,13 +49,20 @@
   right: 0;
   bottom: 0;
 }
-@media(max-width: 560px) {
+@media(max-width: 1040px) {
   .root {
-    padding-bottom: 70px;
+    padding-bottom: 120px;
   }
+}
+@media(max-width: 920px) {
+  .imgContainer {
+    min-width: 0;
+  }
+}
+@media(max-width: 560px) {
   .buttonContainer {
     bottom: 0;
-    left: 42%;
+    left: 40%;
   }
   .contentContainer {
     padding-top: 20px;
@@ -71,11 +76,4 @@
   .imgContainer:nth-child(1) {
     top: 35px;
   }
-}
-@media(max-width: 920px) {
-  .imgContainer {
-    min-width: 0;
-  }
-}
-@media(max-width: 1040px) {
 }

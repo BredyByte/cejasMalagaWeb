@@ -3,7 +3,6 @@
   margin: auto;
   padding: 19px 22px;
   transition: all 0.2s ease;
-  cursor: pointer;
 }
 .button:before {
   content: "";
@@ -12,29 +11,19 @@
   left: 0;
   display: block;
   border-radius: 50%;
-
+  background: rgba(255, 180, 183, 0.5);
   width: 60px;
   height: 60px;
   transition: all 0.3s ease;
-}
-.buttonLink:before {
-  background: rgba(255, 180, 183, 0.5);
-}
-.buttonBtn:before {
-  background: rgba(255, 165, 45, 0.5);
 }
 .button span {
   position: relative;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: 4px;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   vertical-align: middle;
-  transition: color 0.3s ease;
-}
-.button:hover span {
-  color: #fff;
 }
 .button svg {
   position: relative;
@@ -50,17 +39,11 @@
 }
 .button:hover:before {
   width: 100%;
+  background: #ffb4b7;
   border-radius: 50px;
-}
-.buttonLink:hover:before {
-  background: rgb(255, 180, 183);
-}
-.buttonBtn:hover:before {
-  background: rgb(255, 165, 45);
 }
 .button:hover svg {
   transform: translateX(0);
-  stroke: #fff;
 }
 .button:active {
   transform: scale(0.96);
