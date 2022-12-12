@@ -1,13 +1,11 @@
-import { Maps, Feedback, Footer, Questionnaire, Training } from './pages'
+import { Maps, Feedback, Footer, Questionnaire, Training, Test } from './pages'
 import { ContactForm, Checkbox } from './components';
+import { ReactComponent as Logo} from './assets/img/Logo.svg'
+
 function App() {
   return (
     <div className="App">
-      <Training/>
-      <Feedback/>
-      <Questionnaire/>
-      <Maps/>
-      <Footer/>
+      <Test mainTitle="Услуги" logo={Logo}/>
     </div>
   )
 }
