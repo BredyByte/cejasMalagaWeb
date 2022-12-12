@@ -1,13 +1,15 @@
-import { Maps, Feedback, Footer } from './pages';
+import { Maps, Feedback, Footer, Questionnaire } from './pages';
 import { CircleButton } from './components';
+import { Services } from './components/Services';
 
 function App() {
   return (
     <div className="App">
-      <Feedback />
-      {/* <Questionnaire /> */}
+      <Services />
+      {/* <Feedback />
+      <Questionnaire />
       <Maps />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
