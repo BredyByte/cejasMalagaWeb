@@ -1,8 +1,8 @@
 import styles from './Buttons.module.css';
 import React from 'react'
 
-export const CustomButton = ({type, text, link, style}) => {
-  if (style === "btn") {
+export const CustomButton = ({type, text, link, inStyle}) => {
+  if (inStyle === "btn") {
     return (
       <button className={`${styles.button} ${styles.buttonBtn}`} type={type}>
         <span>{text}</span>
@@ -13,7 +13,7 @@ export const CustomButton = ({type, text, link, style}) => {
       </button>
     );
   }
-  else if (style === "link") {
+  else if (inStyle === "link") {
     return (
       <a href={link} className={`${styles.button} ${styles.buttonLink}`} target="_blank" rel="noreferrer">
         <span>{text}</span>
