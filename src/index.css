@@ -2,7 +2,6 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
 body {
   margin: 0;
 }
@@ -158,6 +157,15 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+
+}
+*::selection {
+  color: #000;
+  background: rgba(255, 180, 183, 0.5);
+}
+input:-webkit-autofill
+{
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 180, 183, 0.5) inset !important;
 }
 body {
   font-family:'Montserrat', sans-serif;
@@ -174,9 +182,17 @@ ul li {
   max-width: 1040px;
   margin: 0 auto;
 }
+.section {
+  margin-bottom: 150px;
+}
+@media(max-width: 560px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
 @media(max-width: 1040px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
   }
 }
