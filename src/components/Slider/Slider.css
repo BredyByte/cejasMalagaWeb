@@ -1,0 +1,39 @@
+.Slider {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.card-top {
+  margin: 25px;
+}
+
+.card-top > img {
+  width: 218px;
+  height: 218px;
+  object-fit: cover;
+  background: black;
+}
+
+.card-bottom {
+  margin: 10px 20px;
+}
+.slick-slide > div {
+  margin: 0 auto;
+}
+.slick-list {
+  margin: 0 auto;
+}
+
+.category {
+  position: relative;
+}
+.category::before {
+  content: '';
+  background: rgb(255, 61, 61);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  height: 2px;
+}
