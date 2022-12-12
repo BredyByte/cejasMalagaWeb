@@ -47,7 +47,7 @@
 .starsContainer {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 20px;
 }
 @media(max-width: 1040px) {
   .root {

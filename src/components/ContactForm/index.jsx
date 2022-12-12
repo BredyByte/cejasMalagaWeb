@@ -71,7 +71,7 @@ export const ContactForm = () => {
       <div className={styles.checkboxContainer}>
         <Checkbox/>
       </div>
-      <CustomButton text="Отправить" type="submit" style="btn"/>
+      <CustomButton text="Отправить" type="submit" inStyle="btn"/>
     </form>
   )
 }

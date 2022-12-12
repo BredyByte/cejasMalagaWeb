@@ -30,14 +30,8 @@ export const Training = () => {
         </aside>
       </article>
       <aside className={styles.buttonContainer}>
-        <CustomButton text="Обучаться" style="link"/>
+        <CustomButton text="Обучаться" inStyle="link"/>
       </aside>
-      {/*<aside className={styles.addition}>*/}
-      {/*  <Elips2/>*/}
-      {/*</aside>*/}
-      {/*<aside className={styles.addition}>*/}
-      {/*  <Start/>*/}
-      {/*</aside>*/}
     </section>
   )
 }
