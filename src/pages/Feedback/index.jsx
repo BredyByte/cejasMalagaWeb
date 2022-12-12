@@ -1,4 +1,4 @@
-import { SectionTitle, LinkButton } from '../../components'
+import { SectionTitle, CustomButton } from '../../components'
 import feedback1 from '../../assets/img/feedback1.jpeg';
 import feedback2 from '../../assets/img/feedback2.jpeg';
 import feedback3 from '../../assets/img/feedback3.jpeg';
@@ -41,7 +41,7 @@ export const Feedback = () => {
         </figure>
       </article>
       <aside className={styles.buttonContainer}>
-        <LinkButton text="Все отзывы" className="text" link={"https://www.instagram.com/stories/highlights/17948891671106395/"}/>
+        <CustomButton text="Все отзывы" link={"https://www.instagram.com/stories/highlights/17948891671106395/"} style="link"/>
       </aside>
       <aside className={styles.starsContainer}>
         <SmallStar/>

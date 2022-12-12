@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import styles from './ContactForm.module.css';
-import { Checkbox, CircleButton } from '../../components'
+import { Checkbox, CustomButton } from '../../components'
 
 export const ContactForm = () => {
   const form = useRef();
@@ -71,7 +71,7 @@ export const ContactForm = () => {
       <div className={styles.checkboxContainer}>
         <Checkbox/>
       </div>
-      <CircleButton text="Отправить" type="submit"/>
+      <CustomButton text="Отправить" type="submit" style="btn"/>
     </form>
   )
 }

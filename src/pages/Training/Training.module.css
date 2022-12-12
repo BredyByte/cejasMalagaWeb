@@ -1,7 +1,5 @@
 .root {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 150px;
+  padding: 0 70px 70px 70px;
   position: relative;
 }
 .contentContainer {
@@ -65,12 +63,12 @@
 .buttonContainer {
   position: absolute;
   bottom: 0;
-  left: 45%;
+  left: 50%;
   transform: translateX(-50px);
 }
 @media(max-width: 1040px) {
   .root {
-    padding-bottom: 170px;
+    padding-bottom: 200px;
   }
 }
 @media(max-width: 920px) {
@@ -79,12 +77,9 @@
   }
 }
 @media(max-width: 560px) {
-  .root {
-    padding-bottom: 190px;
-  }
   .buttonContainer {
     bottom: 0;
-    left: 42%;
+    left: 40%;
   }
   .contentContainer {
     padding-top: 20px;

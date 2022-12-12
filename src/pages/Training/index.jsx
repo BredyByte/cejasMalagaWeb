@@ -1,4 +1,4 @@
-import { SectionTitle, CircleButton } from '../../components'
+import { SectionTitle, CustomButton } from '../../components'
 import styles from './Training.module.css'
 
 import pic1 from '../../assets/img/Training1.jpg';
@@ -30,7 +30,7 @@ export const Training = () => {
         </aside>
       </article>
       <aside className={styles.buttonContainer}>
-        <CircleButton className="text" text="Обучаться"/>
+        <CustomButton text="Обучаться" style="link"/>
       </aside>
       {/*<aside className={styles.addition}>*/}
       {/*  <Elips2/>*/}
