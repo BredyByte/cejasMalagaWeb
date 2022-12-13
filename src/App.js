@@ -1,9 +1,19 @@
-import { Maps, Feedback, Footer, Questionnaire, Training, Portfolio, Services } from './pages'
+import {
+  Maps,
+  Feedback,
+  Footer,
+  Questionnaire,
+  Training,
+  Portfolio,
+  Services,
+  SecondarySlogan
+} from './pages'
 import { ContactForm, Checkbox, CustomButton } from './components';
 
 function App() {
   return (
     <div className="App" >
+      <SecondarySlogan/>
       <Portfolio/>
       <Services/>
       <Training/>
