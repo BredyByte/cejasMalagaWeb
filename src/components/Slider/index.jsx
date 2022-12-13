@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 import { dataDigitalBestSeller } from './data';
 import sliderImg1 from '../../assets/img/sliderImg1.jpg';
 
-export const SliderSlick = () => {
+export const Slider = () => {
   const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: true,
@@ -53,7 +53,7 @@ export const SliderSlick = () => {
 
   return (
     <div className="Slider">
-      <Slider {...settings}>
+      <SlickSlider {...settings}>
         {dataDigitalBestSeller.map((item) => (
           <div>
             <div className="card-top">
@@ -66,7 +66,7 @@ export const SliderSlick = () => {
             </div>
           </div>
         ))}
-      </Slider>
+      </SlickSlider>
     </div>
   );
 };
