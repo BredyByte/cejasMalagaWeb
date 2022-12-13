@@ -48,7 +48,7 @@
 }
 .ellipse {
   position: absolute;
-  bottom: -70px;
+  bottom: -115px;
   right: -186px;
   z-index: 1;
 }
@@ -73,6 +73,7 @@
   }
   .ellipse {
     width: 100%;
+    bottom: -70px;
     left: 0;
   }
   .servicesListContainer {
