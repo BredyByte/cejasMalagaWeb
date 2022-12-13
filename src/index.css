@@ -1,9 +1,12 @@
 html {
-  overflow-x: hidden;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+html, body {
+  overflow-x: hidden;
+}
 body {
+  position: relative;
   margin: 0;
 }
 main {
@@ -195,5 +198,15 @@ ul li {
   .container {
     padding-left: 20px!important;
     padding-right: 20px!important;
+  }
+}
+.imgContainer {
+  width: 270px;
+  height: 360px;
+}
+@media(max-width: 430px) {
+  .imgContainer {
+    width: 170px;
+    height: 225px;
   }
 }

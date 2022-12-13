@@ -12,13 +12,13 @@ export const Feedback = () => {
     <section className={`${styles.root} container section`}>
       <SectionTitle subtitleFirst={"Как отзываются"} subtitleSecond={"мои клиенты"} title={"Отзывы"} />
       <article className={styles.contentContainer}>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={feedback1} alt="" />
         </figure>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={feedback2} alt="" />
         </figure>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={feedback3} alt="" />
         </figure>
       </article>

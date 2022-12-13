@@ -10,8 +10,6 @@
   margin-top: 170px;
 }
 .imgContainer {
-  width: 270px;
-  height: 360px;
   margin: 0;
   position: relative;
 }
@@ -86,5 +84,26 @@
   }
   .imgContainer {
     padding-top: 0;
+  }
+}
+@media(max-width: 430px) {
+  .root {
+    padding-bottom: 170px;
+  }
+  .ellipse {
+    bottom: -85%;
+    left: -80%;
+  }
+  .ellipse svg {
+    height: 400px;
+    width: 400px;
+  }
+  .addition svg:nth-child(1) {
+    width: 35px;
+    height: 35px;
+  }
+  .addition svg:nth-child(2) {
+    width: 20px;
+    height: 20px;
   }
 }

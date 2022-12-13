@@ -48,7 +48,7 @@
 }
 .ellipse {
   position: absolute;
-  top: -70px;
+  bottom: -70px;
   right: -186px;
   z-index: 1;
 }
@@ -116,5 +116,16 @@
     width: 213px;
     bottom: 0;
     left: 50%;
+  }
+}
+@media(max-width: 430px) {
+  .buttonContainer {
+    padding-bottom: 15px;
+    left: 55%;
+  }
+  .ellipse {
+    min-width: 400px;
+    left: -30px;
+    bottom: -20px;
   }
 }

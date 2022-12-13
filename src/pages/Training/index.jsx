@@ -12,16 +12,16 @@ export const Training = () => {
     <section className={`${styles.root} container section`}>
       <SectionTitle title="Обучение" subtitleFirst="Представляю вам" subtitleSecond="базовый курс"/>
       <article className={styles.contentContainer}>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={pic1} alt="" />
           <aside className={styles.ellipse}>
             <Ellipse1/>
           </aside>
         </figure>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={pic2} alt="" />
         </figure>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={pic3} alt="" />
         </figure>
         <aside className={styles.addition}>

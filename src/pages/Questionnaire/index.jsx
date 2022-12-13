@@ -11,16 +11,16 @@ export const Questionnaire = () => {
       <SectionTitle title="Обратная связь" subtitleFirst="Остались" subtitleSecond="вопросы" isMargin={true}/>
       <article className={styles.contentContainer}>
         <aside className={styles.galleryContainer}>
-          <figure className={styles.imgContainer}>
+          <figure className={`${styles.imgContainer} imgContainer`}>
             <img className={styles.img} src={questSecImg1} alt=""/>
           </figure>
-          <figure className={styles.imgContainer}>
+          <figure className={`${styles.imgContainer} imgContainer`}>
             <img className={styles.img} src={questSecImg2} alt=""/>
           </figure>
-          <figure className={styles.imgContainer}>
+          <figure className={`${styles.imgContainer} imgContainer`}>
             <img className={styles.img} src={questSecImg3} alt=""/>
           </figure>
-          <aside className={styles.elips}>
+          <aside className={styles.ellipse}>
             <QuestElipsWithStar/>
           </aside>
         </aside>

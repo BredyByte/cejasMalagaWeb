@@ -9,11 +9,8 @@
   width: 100%;
 }
 .imgContainer {
-  width: 270px;
-  height: 360px;
   margin: 0;
   position: relative;
-
 }
 .imgContainer:nth-child(1), .imgContainer:nth-child(3) {
   position: absolute;
@@ -75,5 +72,18 @@
   }
   .imgContainer:nth-child(1) {
     top: 35px;
+  }
+}
+@media(max-width: 430px) {
+  .root {
+    padding-bottom: 85px;
+  }
+  .starsContainer svg:nth-child(1){
+    width: 20px;
+    height: 20px;
+  }
+  .starsContainer svg:nth-child(2){
+    width: 35px;
+    height: 35px;
   }
 }

@@ -14,13 +14,13 @@ export const Portfolio = () => {
         <Start/>
       </aside>
       <article className={styles.contentContainer}>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={pic1} alt="Profile work img" />
         </figure>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={pic2} alt="Profile work img" />
         </figure>
-        <figure className={styles.imgContainer}>
+        <figure className={`${styles.imgContainer} imgContainer`}>
           <img className={styles.img} src={pic3} alt="Profile work img" />
           <aside className={styles.smallStar}>
             <Start/>
