@@ -6,4 +6,5 @@ export { Training } from './Training';
 export { Portfolio } from './Portfolio';
 export { Services } from './Services';
 export { SecondarySlogan } from './SecondarySlogan'
-export { Header } from './Header'
+export { Header } from './Header';
+export { PrimarySlogan } from './PrimarySlogan';

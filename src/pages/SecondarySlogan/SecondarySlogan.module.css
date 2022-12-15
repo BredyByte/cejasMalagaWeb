@@ -5,12 +5,10 @@
 }
 .titleContainer {
   width: 640px;
-  height: 290px;
 }
 .titleItem {
   font-size: 64px;
   font-weight: 300;
-  line-height: 1;
 }
 .titleItem p {
   position: relative;
@@ -51,7 +49,16 @@
   top: 25%;
   right: 10%;
 }
-
+@media(max-width: 1040px) {
+  .ellipse {
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    left: -50px;
+    top: -40px;
+    z-index: 1;
+  }
+}
 @media(max-width: 860px) {
   .titleContainer {
     width: 560px;
@@ -65,6 +72,9 @@
   }
 }
 @media(max-width: 560px) {
+  .root {
+    margin-bottom: 70px!important;
+  }
   .titleContainer {
     width: 460px;
     height: 180px;
@@ -76,7 +86,8 @@
   .titleItem:nth-child(3) .circle  {
     width: 55px;
     height: 55px;
-    left: -20px;
+    left: -30px;
+    bottom: -8px;
   }
   .ellipse {
     transform: rotate(-20deg);

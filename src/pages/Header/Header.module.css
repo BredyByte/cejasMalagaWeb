@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 1040px) {
+  .root {
+    margin-bottom: 0!important;
+  }
   .menu {
     display: none;
   }

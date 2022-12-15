@@ -7,7 +7,8 @@ import {
   Portfolio,
   Services,
   SecondarySlogan,
-  Header
+  Header,
+  PrimarySlogan
 } from './pages'
 import { ContactForm, Checkbox, CustomButton } from './components';
 
@@ -16,6 +17,7 @@ function App() {
     <div className="App" >
 
       <Header/>
+      <PrimarySlogan/>
       <SecondarySlogan/>
       <Portfolio/>
       <Services/>
