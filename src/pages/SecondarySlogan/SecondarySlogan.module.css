@@ -10,7 +10,7 @@
 .titleItem {
   font-size: 64px;
   font-weight: 300;
-  z-index: 2;
+  line-height: 1;
 }
 .titleItem p {
   position: relative;
@@ -58,7 +58,10 @@
   }
   .titleItem {
     font-size: 48px;
-    line-height: 64px;
+  }
+  .titleItem:nth-child(3) .circle {
+    left: -58px;
+    bottom: -20px;
   }
 }
 @media(max-width: 560px) {
@@ -73,7 +76,6 @@
   .titleItem:nth-child(3) .circle  {
     width: 55px;
     height: 55px;
-    top: 10px;
     left: -20px;
   }
   .ellipse {
