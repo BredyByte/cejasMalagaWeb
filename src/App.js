@@ -6,13 +6,16 @@ import {
   Training,
   Portfolio,
   Services,
-  SecondarySlogan
+  SecondarySlogan,
+  Header
 } from './pages'
 import { ContactForm, Checkbox, CustomButton } from './components';
 
 function App() {
   return (
     <div className="App" >
+
+      <Header/>
       <SecondarySlogan/>
       <Portfolio/>
       <Services/>

@@ -179,7 +179,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-ul li {
+li {
   list-style: none;
 }
 .container {
@@ -209,4 +209,7 @@ ul li {
     width: 170px;
     height: 225px;
   }
+}
+.App {
+  position: relative;
 }

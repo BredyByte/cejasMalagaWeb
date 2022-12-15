@@ -27,7 +27,7 @@ const sideLinkList = [
 
 export const Maps = () => {
   return (
-    <section className={`${styles.root} container`}>
+    <section className={`${styles.root} container section`}>
       <SectionTitle title={'Контакты'} subtitleFirst={'Свяжитесь со мной'} isMargin={true} />
       <section className={styles.contentContainer}>
         <iframe
@@ -46,7 +46,7 @@ export const Maps = () => {
               sideLinkList.map(i => (
               <li className={styles.connectionLink} key={i.id}>
                 <ListStar/>
-                <a href={i.link}>
+                <a href={i.link} target="_blank" rel="noreferrer">
                   {i.text}
                 </a>
               </li>

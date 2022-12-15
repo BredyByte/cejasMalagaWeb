@@ -3,3 +3,4 @@ export { Checkbox } from './CustomUI/Checkbox';
 export { SectionTitle } from './SectionTitle';
 export { ContactForm } from './ContactForm';
 export { Slider } from './Slider'
+export { ModalNav } from './ModalNav'
