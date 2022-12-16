@@ -1,8 +1,7 @@
-import styles from './Buttons.module.css';
-import React from 'react'
+import styles from './Buttons.module.css'
 
 export const CustomButton = ({type, text, link, inStyle}) => {
-  if (inStyle === "btn") {
+  if (inStyle === 'btn') {
     return (
       <button className={`${styles.button} ${styles.buttonBtn}`} type={type}>
         <span>{text}</span>
@@ -11,9 +10,8 @@ export const CustomButton = ({type, text, link, inStyle}) => {
           <polyline points="8 1 12 5 8 9"></polyline>
         </svg>
       </button>
-    );
-  }
-  else if (inStyle === "link") {
+    )
+  } else if (inStyle === 'link') {
     return (
       <a href={link} className={`${styles.button} ${styles.buttonLink}`} target="_blank" rel="noreferrer">
         <span>{text}</span>

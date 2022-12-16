@@ -5,9 +5,9 @@ import p1 from '../../assets/img/PortfolioImg.jpg';
 
 import styles from './Services.module.css';
 
-export const Services = () => {
+export const Services = ({referens}) => {
   return (
-    <section className={`${styles.root} container section`}>
+    <section ref={referens.services} className={`${styles.root} container section`}>
       <SectionTitle title="Услуги" subtitleFirst="Предоставляю" subtitleSecond="лучшие услуги" isMargin={true}/>
       <article className={styles.contentContainer}>
         <aside className={styles.servicesListContainer}>

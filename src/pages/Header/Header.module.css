@@ -19,6 +19,7 @@
 }
 .menuItem {
   font-size: 13px;
+  cursor: pointer;
 }
 .mapLink {
   display: flex;

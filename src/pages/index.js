@@ -8,3 +8,4 @@ export { Services } from './Services';
 export { SecondarySlogan } from './SecondarySlogan'
 export { Header } from './Header';
 export { PrimarySlogan } from './PrimarySlogan';
+export { About } from './About';
