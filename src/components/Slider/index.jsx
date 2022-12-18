@@ -3,43 +3,43 @@ import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
-import { dataDigitalBestSeller } from './data';
 import sliderImg1 from '../../assets/img/sliderImg1.jpg';
 
-export const Slider = () => {
+export const Slider = ({ data }) => {
   const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: true,
     infinite: false,
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
+    arrows: false,
+    dotsClass: 'slickDots',
+    customPaging: i => <button className='dotItem'></button>,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     initialSlide: 2,
+      //   },
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //   },
+      // },
     ],
   };
 
@@ -52,18 +52,11 @@ export const Slider = () => {
   };
 
   return (
-    <div className="Slider">
+    <div className='slider'>
       <SlickSlider {...settings}>
-        {dataDigitalBestSeller.map((item) => (
-          <div>
-            <div className="card-top">
-              <img src={item.linkImg} onError={handleErrorImage} alt="img" />
-              <h1>{item.title}</h1>
-            </div>
-            <div className="card-bottom">
-              <h3>{item.price}</h3>
-              <span className="category">{item.category}</span>
-            </div>
+        {data.map((i) => (
+          <div key={i.id} className='slideItem'>
+            <img className='img' src={i.imgLink} onError={handleErrorImage} alt="Slider Img" />
           </div>
         ))}
       </SlickSlider>

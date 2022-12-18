@@ -5,9 +5,9 @@ import { ReactComponent as Ellipse } from '../../assets/img/AboutEllipse.svg'
 
 import styles from './About.module.css'
 
-export const About = ({referens}) => {
+export const About = ({reference}) => {
   return (
-    <section ref={referens.about} className={`${styles.root} container section`}>
+    <section ref={reference.about} className={`${styles.root} container section`}>
       <SectionTitle
         title="Обо мне"
         subtitleFirst="Ваш мастер"

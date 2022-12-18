@@ -1,4 +1,5 @@
 import styles from './ModalNav.module.css';
+import { useNavigate } from 'react-router-dom'
 import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
 import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
 import { RxCross1 } from 'react-icons/rx';
@@ -26,20 +27,21 @@ const sideLinkList = [
   },
 ];
 
-export const ModalNav = ({ onClickModal }) => {
+export const ModalNav = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.root}>
       <span className={styles.cross}>
-        <RxCross1 onClick={onClickModal}/>
+        <RxCross1 onClick={() => navigate('/')}/>
       </span>
       <div className={styles.contentContainer}>
         <Logo className={styles.logo}/>
         <nav className={styles.navigation}>
           <li className={styles.navigationItem}>
-            <a href="#">Обучение</a>
+            <p>Обучение</p>
           </li>
           <li className={styles.navigationItem}>
-            <a href="#">Услуги</a>
+            <p onClick={() => navigate("/services")}>Услуги</p>
           </li>
         </nav>
         <aside className={styles.info}>

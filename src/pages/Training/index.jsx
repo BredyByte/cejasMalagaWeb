@@ -7,9 +7,9 @@ import pic3 from '../../assets/img/Training3.jpg';
 import { ReactComponent as Ellipse1 } from '../../assets/img/TrainingElipsWithStar1.svg';
 import { ReactComponent as Start } from '../../assets/img/TrainingStar.svg';
 
-export const Training = ({referens}) => {
+export const Training = ({reference}) => {
   return (
-    <section ref={referens.training} className={`${styles.root} container section`}>
+    <section ref={reference.training} className={`${styles.root} container section`}>
       <SectionTitle title="Обучение" subtitleFirst="Представляю вам" subtitleSecond="базовый курс"/>
       <article className={styles.contentContainer}>
         <figure className={`${styles.imgContainer} imgContainer`}>

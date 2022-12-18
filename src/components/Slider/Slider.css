@@ -1,39 +1,49 @@
-.Slider {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 50px;
+.slider {
+  width: 100%;
+  padding-top: 30px;
+}
+.slideItem {
+  outline: none;
+  display: flex!important;
+  justify-content: center;
+  padding: 12px 0;
+}
+.img {
+  width: 215px;
+  height: 215px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+.slickDots {
+  padding-top: 30px;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+}
+.slickDots .slick-active .dotItem{
+  background-color: #FFA52D;
+}
+.dotItem {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255,180,183,0.6);
 }
 
-.card-top {
-  margin: 25px;
+@media (max-width: 560px) {
+  .img {
+    width: 185px;
+    height: 185px;
+  }
+  .slickDots {
+    padding-top: 20px;
+  }
+}
+@media(max-width: 430px) {
+  .img {
+    width: 165px;
+    height: 165px;
+  }
 }
 
-.card-top > img {
-  width: 218px;
-  height: 218px;
-  object-fit: cover;
-  background: black;
-}
-
-.card-bottom {
-  margin: 10px 20px;
-}
-.slick-slide > div {
-  margin: 0 auto;
-}
-.slick-list {
-  margin: 0 auto;
-}
-
-.category {
-  position: relative;
-}
-.category::before {
-  content: '';
-  background: rgb(255, 61, 61);
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  right: 0;
-  height: 2px;
-}

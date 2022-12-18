@@ -25,9 +25,9 @@ const sideLinkList = [
   },
 ];
 
-export const Maps = ({referens}) => {
+export const Maps = ({reference}) => {
   return (
-    <section ref={referens.maps} className={`${styles.root} container section`}>
+    <section ref={reference.maps} className={`${styles.root} container section`}>
       <SectionTitle title={'Контакты'} subtitleFirst={'Свяжитесь со мной'} isMargin={true} />
       <section className={styles.contentContainer}>
         <iframe

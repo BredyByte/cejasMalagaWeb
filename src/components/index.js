@@ -5,3 +5,5 @@ export { ContactForm } from './ContactForm';
 export { Slider } from './Slider'
 export { ModalNav } from './ModalNav';
 export { ScrollToTop } from './ScrollToTop'
+export { DropDownList } from './DropDownList'
+export { DropDownItem } from './DropDownItem'

@@ -7,9 +7,9 @@ import { ReactComponent as BigStar } from '../../assets/img/BigFeetbackStar.svg'
 
 import styles from './Feedback.module.css';
 
-export const Feedback = ({referens}) => {
+export const Feedback = ({reference}) => {
   return (
-    <section ref={referens.feedback} className={`${styles.root} container section`}>
+    <section ref={reference.feedback} className={`${styles.root} container section`}>
       <SectionTitle subtitleFirst={"Как отзываются"} subtitleSecond={"мои клиенты"} title={"Отзывы"} />
       <article className={styles.contentContainer}>
         <figure className={`${styles.imgContainer} imgContainer`}>

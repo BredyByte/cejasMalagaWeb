@@ -5,9 +5,9 @@ import questSecImg2 from '../../assets/img/questSecImg2.png';
 import questSecImg3 from '../../assets/img/questSecImg3.png';
 import styles from './Questionnaire.module.css';
 
-export const Questionnaire = ({referens}) => {
+export const Questionnaire = ({reference}) => {
   return (
-    <section ref={referens.questionnaire} className={`${styles.root} container section`}>
+    <section ref={reference.questionnaire} className={`${styles.root} container section`}>
       <SectionTitle title="Обратная связь" subtitleFirst="Остались" subtitleSecond="вопросы" isMargin={true}/>
       <article className={styles.contentContainer}>
         <aside className={styles.galleryContainer}>

@@ -9,3 +9,4 @@ export { SecondarySlogan } from './SecondarySlogan'
 export { Header } from './Header';
 export { PrimarySlogan } from './PrimarySlogan';
 export { About } from './About';
+export { AdditionalPage } from './AdditionalPage';

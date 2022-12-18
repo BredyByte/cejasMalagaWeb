@@ -1,9 +1,9 @@
 import styles from './Buttons.module.css'
 
-export const CustomButton = ({type, text, link, inStyle}) => {
+export const CustomButton = ({type, text, link, inStyle, func}) => {
   if (inStyle === 'btn') {
     return (
-      <button className={`${styles.button} ${styles.buttonBtn}`} type={type}>
+      <button className={`${styles.button} ${styles.buttonBtn}`} type={type} onClick={func}>
         <span>{text}</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>

@@ -2,12 +2,17 @@ import { CustomButton, SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/img/ServicesEllipse.svg';
 import p1 from '../../assets/img/PortfolioImg.jpg';
+import { useNavigate } from 'react-router-dom'
 
 import styles from './Services.module.css';
 
-export const Services = ({referens}) => {
+export const Services = ({reference}) => {
+  const navigate = useNavigate()
+  const onClickNavigate = () => {
+    navigate('/services')
+  }
   return (
-    <section ref={referens.services} className={`${styles.root} container section`}>
+    <section ref={reference.services} className={`${styles.root} container section`}>
       <SectionTitle title="Услуги" subtitleFirst="Предоставляю" subtitleSecond="лучшие услуги" isMargin={true}/>
       <article className={styles.contentContainer}>
         <aside className={styles.servicesListContainer}>
@@ -32,7 +37,7 @@ export const Services = ({referens}) => {
         </aside>
       </article>
       <aside className={styles.buttonContainer}>
-        <CustomButton text="Все услуги" inStyle="link"/>
+        <CustomButton text="Все услуги" inStyle="btn" func={onClickNavigate}/>
       </aside>
     </section>
   )

@@ -35,15 +35,15 @@ export const Main = () => {
       <ScrollToTop refs={refs} scrollToref={scrollToref}/>
       <Header refs={refs} scrollToref={scrollToref}/>
       <PrimarySlogan/>
-      <About referens={refs}/>
+      <About reference={refs}/>
       <SecondarySlogan/>
-      <Portfolio referens={refs}/>
-      <Services referens={refs}/>
-      <Training referens={refs}/>
-      <Feedback referens={refs}/>
-      <Questionnaire referens={refs}/>
-      <Maps referens={refs}/>
-      <Footer/>
+      <Portfolio reference={refs}/>
+      <Services reference={refs}/>
+      <Training reference={refs}/>
+      <Feedback reference={refs}/>
+      <Questionnaire reference={refs}/>
+      <Maps reference={refs}/>
+      <Footer refs={refs} scrollToref={scrollToref}/>
     </div>
   );
 }

@@ -6,9 +6,9 @@ import pic2 from '../../assets/img/Portfolio2.png';
 import pic3 from '../../assets/img/Portfolio3.png';
 import { ReactComponent as Start } from '../../assets/img/TrainingStar.svg';
 
-export const Portfolio = ({referens}) => {
+export const Portfolio = ({reference}) => {
   return (
-    <section ref={referens.portfolio} className={`${styles.root} container section`}>
+    <section ref={reference.portfolio} className={`${styles.root} container section`}>
       <SectionTitle title="Портфолио" subtitleFirst="Со мной ты будешь" subtitleSecond="самой яркой"/>
       <aside className={styles.star}>
         <Start/>

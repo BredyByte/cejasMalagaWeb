@@ -19,6 +19,9 @@
   justify-content: space-between;
   margin-bottom: 40px;
 }
+.menuItem {
+  cursor: pointer;
+}
 .linkList {
   text-align: center;
 }
