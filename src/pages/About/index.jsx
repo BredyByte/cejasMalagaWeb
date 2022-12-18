@@ -11,7 +11,7 @@ export const About = ({reference}) => {
       <SectionTitle
         title="Обо мне"
         subtitleFirst="Ваш мастер"
-        subtitleSecond="Мария Радионова"
+        subtitleSecond="Мария Рoдионова"
         isBold={true}
         isPadding={false}
         isMargin={true}
