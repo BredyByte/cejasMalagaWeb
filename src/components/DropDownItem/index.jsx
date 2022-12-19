@@ -19,23 +19,27 @@ export const DropDownItem = ({ title, content, price }) => {
       </h3>
       <div className={styles.contentContainer} ref={contentRef} style={{ maxHeight: `${setHeight}`,}}>
         <article className={styles.textContainer}>
-          <p className={styles.mainText}>
-            {content.mainText}
-          </p>
-          <ul className={styles.approachList}>
-            <p>Для кого эта процедура:</p>
-            {
-              content.forWhoList.map(i => (
-                <li key={i.id} className={styles.approachItem}>
-                  <ListStar className={styles.listStar}/>
-                  <p>{i.text}</p>
-                </li>
-              ))
-            }
-          </ul>
-          <div className={styles.sliderContainer}>
-            <Slider data={content.sliderImgList}/>
-          </div>
+          <div className={styles.mainText} dangerouslySetInnerHTML={{ __html: content.mainText }}/>
+          {
+            content.forWhoList &&
+            <ul className={styles.approachList}>
+              <p>Для кого эта процедура:</p>
+              {
+                content.forWhoList.map(i => (
+                  <li key={i.id} className={styles.approachItem}>
+                    <ListStar className={styles.listStar}/>
+                    <p>{i.text}</p>
+                  </li>
+                ))
+              }
+            </ul>
+          }
+          {
+            content.sliderImgList &&
+            <div className={styles.sliderContainer}>
+              <Slider data={content.sliderImgList}/>
+            </div>
+          }
           <div className={styles.bottomContent}>
             <p>
               Цена: { price }	&#8364;

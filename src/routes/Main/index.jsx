@@ -13,13 +13,17 @@ import {
 } from '../../pages';
 import { ScrollToTop } from '../../components'
 import styles from './Main.module.css';
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 export const Main = () => {
   const scrollToref = ref => window.scrollTo({
     top: ref.current.offsetTop,
     behavior: 'smooth'
   });
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   const refs = {
     about: useRef(null),

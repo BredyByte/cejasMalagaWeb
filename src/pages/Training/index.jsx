@@ -6,8 +6,13 @@ import pic2 from '../../assets/img/Training2.jpg';
 import pic3 from '../../assets/img/Training3.jpg';
 import { ReactComponent as Ellipse1 } from '../../assets/img/TrainingElipsWithStar1.svg';
 import { ReactComponent as Start } from '../../assets/img/TrainingStar.svg';
+import { useNavigate } from 'react-router-dom'
 
 export const Training = ({reference}) => {
+  const navigate = useNavigate()
+  const onClickNavigate = () => {
+    navigate('/training')
+  }
   return (
     <section ref={reference.training} className={`${styles.root} container section`}>
       <SectionTitle title="Обучение" subtitleFirst="Представляю вам" subtitleSecond="базовый курс"/>
@@ -30,7 +35,7 @@ export const Training = ({reference}) => {
         </aside>
       </article>
       <aside className={styles.buttonContainer}>
-        <CustomButton text="Обучаться" inStyle="link"/>
+        <CustomButton text="Обучаться" inStyle="btn" func={onClickNavigate}/>
       </aside>
     </section>
   )

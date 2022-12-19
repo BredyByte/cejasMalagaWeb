@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { Main, ServicesAdditionalPage, ModalPage } from './routes'
+import { Main, ServicesAdditionalPage, TrainingAdditionalPage, ModalPage } from './routes'
 import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main/>,
-    // errorElement: <ErrorPage/>,
   },
   {
     path: '/services',
     element: <ServicesAdditionalPage/>
+  },
+  {
+    path: '/training',
+    element: <TrainingAdditionalPage/>
   },
   {
     path: '/modal',

@@ -38,7 +38,7 @@ export const ModalNav = () => {
         <Logo className={styles.logo}/>
         <nav className={styles.navigation}>
           <li className={styles.navigationItem}>
-            <p>Обучение</p>
+            <p onClick={() => navigate("/training")}>Обучение</p>
           </li>
           <li className={styles.navigationItem}>
             <p onClick={() => navigate("/services")}>Услуги</p>
