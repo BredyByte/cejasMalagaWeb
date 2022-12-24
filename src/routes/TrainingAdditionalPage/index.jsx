@@ -6,7 +6,6 @@ import img3 from '../../assets/img/Portfolio3.png';
 const data = [
   {
     title: "Дизайн бровей с нуля",
-    price: 12321321313,
     content: {
       mainText: `
         <b>Программа обучения базового курса “Дизайн бровей с нуля”</b>

@@ -41,9 +41,12 @@ export const DropDownItem = ({ title, content, price }) => {
             </div>
           }
           <div className={styles.bottomContent}>
-            <p>
-              Цена: { price }	&#8364;
-            </p>
+            {
+              price &&
+              <p>
+                Цена: { price }	&#8364;
+              </p>
+            }
             <aside className={styles.btnContainer}>
               <CustomButton inStyle="link" text="Записаться" link="https://www.instagram.com/cejas_malaga/"/>
             </aside>
