@@ -155,8 +155,9 @@ const data = [
   },
 ]
 
-export const TrainingAdditionalPage = () => {
+const TrainingAdditionalPage = () => {
   return (
     <AdditionalPage data={data} title="Обучение"/>
   )
 }
+export default TrainingAdditionalPage;

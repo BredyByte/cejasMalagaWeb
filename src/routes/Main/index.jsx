@@ -15,7 +15,7 @@ import { ScrollToTop } from '../../components'
 import styles from './Main.module.css';
 import { useEffect, useRef, useState } from 'react'
 
-export const Main = () => {
+const Main = () => {
   const [isActive, setIsActive] = useState(false);
   const scrollToref = ref => window.scrollTo({
     top: ref.current.offsetTop,
@@ -53,3 +53,5 @@ export const Main = () => {
     </div>
   );
 }
+
+export default Main;

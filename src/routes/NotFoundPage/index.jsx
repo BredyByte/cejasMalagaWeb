@@ -2,7 +2,7 @@ import styles from './NotFoundPage.module.css';
 import { CustomButton } from '../../components/CustomUI/Buttons';
 import { useNavigate } from 'react-router-dom';
 
-export const NotFoundPage = () => {
+const NotFoundPage = () => {
   const navigate = useNavigate();
   const onClick = () => {
     navigate("/");
@@ -23,3 +23,4 @@ export const NotFoundPage = () => {
     </div>
   )
 }
+export default NotFoundPage

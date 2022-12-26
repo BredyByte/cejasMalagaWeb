@@ -221,8 +221,9 @@ const data =  [
   },
 ]
 
-export const ServicesAdditionalPage = () => {
+const ServicesAdditionalPage = () => {
   return (
     <AdditionalPage data={data} title="Услуги"/>
   )
 }
+export default ServicesAdditionalPage;

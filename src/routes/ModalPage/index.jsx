@@ -1,5 +1,6 @@
 import { ModalNav } from '../../components'
 
-export const ModalPage = () => {
+const ModalPage = () => {
   return <ModalNav/>
 }
+export default ModalPage;
