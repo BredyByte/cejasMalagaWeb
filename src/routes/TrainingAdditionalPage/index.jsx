@@ -1,7 +1,5 @@
 import { AdditionalPage } from '../../pages';
-import img1 from '../../assets/img/Portfolio1.png';
-import img2 from '../../assets/img/Portfolio2.png';
-import img3 from '../../assets/img/Portfolio3.png';
+import { img2, img4, img1, img3 } from '../../assets/img/trainingPageExports';
 
 const data = [
   {
@@ -135,6 +133,24 @@ const data = [
         <br>
         Расширите свой спектр услуг, поднимите свой средний прайс, научитесь работать в трендовой технике и всегда получать крутой результат.
       `,
+      sliderImgList: [
+        {
+          id: 1,
+          imgLink: img1
+        },
+        {
+          id: 2,
+          imgLink: img2
+        },
+        {
+          id: 3,
+          imgLink: img3
+        },
+        {
+          id: 4,
+          imgLink: img4
+        },
+      ]
     }
   },
 ]

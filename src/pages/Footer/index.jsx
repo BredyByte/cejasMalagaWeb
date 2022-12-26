@@ -16,10 +16,12 @@ export const Footer = ({ refs, scrollToref }) => {
         <li className={styles.menuItem} onClick={() => scrollToref(refs.questionnaire)}><p>Обратная связь</p></li>
       </menu>
       <ul className={styles.linkList}>
-        <h4>Разработчик сайта:</h4>
+        <h4>Разработка сайтов:</h4>
         <li className={styles.linkItem}>
-          <span>David Bredykhin</span>
-          <a href="mailto:correodemimobil@gmail.com">correodemimobil@gmail.com</a>
+          <a href="mailto:correodemimobil@gmail.com" target="_blank" rel="noreferrer">correodemimobil@gmail.com</a>
+        </li>
+        <li className={styles.linkItem}>
+          <a href="https://t.me/Davyd_y_punto" target="_blank" rel="noreferrer">Telegram</a>
         </li>
       </ul>
     </footer>

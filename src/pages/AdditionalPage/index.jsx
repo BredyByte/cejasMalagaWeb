@@ -1,25 +1,29 @@
 import styles from './AdditionalPage.module.css';
 import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
-import { DropDownList } from '../../components';
+import { DropDownList, CustomButton } from '../../components';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export const AdditionalPage = ({data, title}) => {
-  useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+  const [isActive, setIsActive] = useState(false);
   const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate("/");
+  }
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+    setIsActive(true);
+  }, []);
+
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} ${isActive && styles.active}`}>
       <div className="container">
         <header className={styles.header}>
-          <p className={styles.button} onClick={() => navigate('/')}>
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-              <polyline points="8 1 12 5 8 9"></polyline>
-              <path d="M1,5 L11,5"></path>
-            </svg>
-            <span>Назад</span>
-          </p>
+          <aside className={styles.btnContainer}>
+            <CustomButton text="Назад" func={onClick} inStyle="btnReverse"/>
+          </aside>
           <Logo className={styles.logo}/>
         </header>
         <main className={styles.main}>

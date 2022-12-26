@@ -3,7 +3,7 @@ import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
-import sliderImg1 from '../../assets/img/sliderImg1.jpg';
+import sliderImg1 from '../../assets/img/servicesLamRis1.jpeg';
 
 export const Slider = ({ data }) => {
   const [defaultImage, setDefaultImage] = useState({});

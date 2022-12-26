@@ -13,16 +13,18 @@ import {
 } from '../../pages';
 import { ScrollToTop } from '../../components'
 import styles from './Main.module.css';
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export const Main = () => {
+  const [isActive, setIsActive] = useState(false);
   const scrollToref = ref => window.scrollTo({
     top: ref.current.offsetTop,
     behavior: 'smooth'
   });
 
   useEffect(() => {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    setIsActive(true)
   }, [])
 
   const refs = {
@@ -35,7 +37,7 @@ export const Main = () => {
     maps: useRef(null),
   }
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} ${isActive && styles.active}`}>
       <ScrollToTop refs={refs} scrollToref={scrollToref}/>
       <Header refs={refs} scrollToref={scrollToref}/>
       <PrimarySlogan/>

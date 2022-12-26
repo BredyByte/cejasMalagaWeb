@@ -2,7 +2,7 @@ import styles from './ScrollToTop.module.css'
 import { useEffect, useState } from 'react'
 
 export const ScrollToTop = () => {
-  const [isShowed, setIsShowed] = useState(false );
+  const [isShowed, setIsShowed] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if(window.scrollY > 750) {
@@ -18,20 +18,15 @@ export const ScrollToTop = () => {
       behavior: 'smooth'
     })
   }
-  if(isShowed) {
-    return (
-      <div className={styles.toTopContainer} onClick={scrollToTop}>
-        <div className={styles.toTopBg}></div>
-        <div className={styles.toTopButton}>
-          <p>
-            <i className="fa fa-chevron-up" aria-hidden="true"></i>
-          </p>
-        </div>
+  return (
+    <div className={`${styles.toTopContainer} ${isShowed && styles.active}`} onClick={scrollToTop}>
+      <div className={styles.toTopBg}></div>
+      <div className={styles.toTopButton}>
+        <p>
+          <i className="fa fa-chevron-up" aria-hidden="true"></i>
+        </p>
       </div>
-    )
-  } else {
-    return
-  }
-
+    </div>
+  )
 }
 

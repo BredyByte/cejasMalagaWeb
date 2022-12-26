@@ -21,6 +21,16 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         </svg>
       </a>
     )
+  } else if (inStyle === 'btnReverse') {
+    return (
+      <button className={styles.buttonReverse} onClick={func}>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <polyline points="8 1 12 5 8 9"></polyline>
+          <path d="M1,5 L11,5"></path>
+        </svg>
+        <span>{text}</span>
+      </button>
+      )
   }
   return (
     <button>

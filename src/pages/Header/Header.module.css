@@ -3,7 +3,7 @@
 }
 .navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 0 20px;
   padding-top: 25px;
@@ -46,6 +46,9 @@
 @media (max-width: 1040px) {
   .root {
     margin-bottom: 0!important;
+  }
+  .navigation {
+    justify-content: center;
   }
   .menu {
     display: none;

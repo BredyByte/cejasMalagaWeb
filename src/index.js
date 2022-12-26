@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
-import { Main, ServicesAdditionalPage, TrainingAdditionalPage, ModalPage } from './routes'
+import { Main, ServicesAdditionalPage, TrainingAdditionalPage, ModalPage, NotFoundPage } from './routes'
 import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -21,15 +20,15 @@ const router = createBrowserRouter([
   {
     path: '/modal',
     element: <ModalPage/>,
-  }
+  },
+  {
+    path: '/*',
+    element: <NotFoundPage/>,
+  },
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router} />
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

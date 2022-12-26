@@ -1,0 +1,24 @@
+.root {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255,180,183, 0.3) 0%, rgba(255,180,183, 0.2) 50%, rgba(255,180,183, 0.1) 100%);
+}
+.contentContainer {
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 40px;
+  text-align: center;
+}
+.desc {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}

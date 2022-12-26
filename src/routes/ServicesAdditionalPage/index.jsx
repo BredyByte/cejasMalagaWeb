@@ -1,7 +1,6 @@
 import { AdditionalPage } from '../../pages';
-import img1 from '../../assets/img/Portfolio1.png';
-import img2 from '../../assets/img/Portfolio2.png';
-import img3 from '../../assets/img/Portfolio3.png';
+import { sec3img1, sec3img3, sec3img4, sec3img5, sec3img6, sec3img2 } from '../../assets/img/servSec3Export';
+import { sec1img4, sec1img1, sec1img3, sec1img5, sec1img2 } from '../../assets/img/servSec1Export';
 
 const data =  [
   {
@@ -67,7 +66,28 @@ const data =  [
           text: "для девушек с асимметрией лица;"
         },
       ],
-      sliderImgList: []
+      sliderImgList: [
+        {
+          id: 1,
+          imgLink: sec1img1
+        },
+        {
+          id: 2,
+          imgLink: sec1img2
+        },
+        {
+          id: 3,
+          imgLink: sec1img3
+        },
+        {
+          id: 4,
+          imgLink: sec1img4
+        },
+        {
+          id: 5,
+          imgLink: sec1img5
+        },
+      ]
     }
   },
   {
@@ -143,7 +163,32 @@ const data =  [
         ламинирование ресниц пользуется у девушек, которые выбирают натуральность и минимальный макияж, 
         ведь именно с ламинированием вы можете не красить ресницы тушью.
         `,
-      sliderImgList: []
+      sliderImgList: [
+        {
+          id: 1,
+          imgLink: sec3img1
+        },
+        {
+          id: 2,
+          imgLink: sec3img2
+        },
+        {
+          id: 3,
+          imgLink: sec3img3
+        },
+        {
+          id: 4,
+          imgLink: sec3img4
+        },
+        {
+          id: 5,
+          imgLink: sec3img5
+        },
+        {
+          id: 6,
+          imgLink: sec3img6
+        },
+      ]
     }
   },
   {

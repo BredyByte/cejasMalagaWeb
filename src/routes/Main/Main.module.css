@@ -1,4 +1,9 @@
 .root {
   position: relative;
+  transition: all, 1s;
   background: linear-gradient(180deg, rgba(255,180,183, 0.3) 0%, rgba(255,180,183, 0.2) 50%, rgba(255,180,183, 0.1) 100%);
+  opacity: 0;
+}
+.active {
+  opacity: 1;
 }
