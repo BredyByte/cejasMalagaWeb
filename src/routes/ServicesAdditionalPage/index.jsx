@@ -1,6 +1,7 @@
 import { AdditionalPage } from '../../pages';
 import { sec3img1, sec3img3, sec3img4, sec3img5, sec3img6, sec3img2 } from '../../assets/img/servSec3Export';
 import { sec1img4, sec1img1, sec1img3, sec1img5, sec1img2 } from '../../assets/img/servSec1Export';
+import { sec5img1, sec5img3, sec5img4, sec5img5, sec5img6, sec5img7, sec5img2 } from '../../assets/img/servSec5Export';
 
 const data =  [
   {
@@ -217,6 +218,57 @@ const data =  [
         },
       ],
       sliderImgList: []
+    }
+  },
+  {
+    title: "Дизайн бровей: окрашивание и коррекция",
+    price: 20,
+    content: {
+      mainText: `
+        Идеальная процедура для тех, кто хочет создать натуральную 
+        форму бровей, подходящую вашему лицу, а также для тех девушек, 
+        кто хочет попробовать, как будет выглядеть перманентный макияж бровей.
+        <br>
+        <br>
+        Дизайн бровей-это создание формы при помощи пинцета/нити и с окрашиванием 
+        бровей краской или хной с эффектом, который сохраняется на волосках 3-4 недели, 
+        на коже до 5-12 дней в зависимости от типа кожи.
+        <br>
+        В работе используются материалы из СНГ, которые ценятся за свое высокое качество, 
+        а соответственно и красивый результат окрашивания и имеют максимально допустимый срок носки.
+        Все инструменты, используемые в работе, проходят обработку и обязательную дезинфекцию. 
+        Работаю в студии в центре Малаги.
+        `,
+      sliderImgList: [
+        {
+          id: 1,
+          imgLink: sec5img1
+        },
+        {
+          id: 2,
+          imgLink: sec5img2
+        },
+        {
+          id: 3,
+          imgLink: sec5img3
+        },
+        {
+          id: 4,
+          imgLink: sec5img4
+        },
+        {
+          id: 5,
+          imgLink: sec5img5
+        },
+        {
+          id: 6,
+          imgLink: sec5img6
+        },
+        {
+          id: 7,
+          imgLink: sec5img7
+        },
+      ]
     }
   },
 ]
