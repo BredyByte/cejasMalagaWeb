@@ -17,7 +17,7 @@ export const PrimarySlogan = () => {
           <aside className={styles.imgContainer}>
             <div className={styles.imgContentContainer}>
               <div className={styles.img} style={{backgroundImage: `url("${pic1}")`, backgroundSize: "cover", backgroundPosition: "center center"}}>
-                ></div>
+              </div>
             </div>
             <Ellipse className={styles.ellipse}/>
           </aside>

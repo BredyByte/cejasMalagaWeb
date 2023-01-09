@@ -30,8 +30,8 @@ export const About = ({reference}) => {
               className={styles.img}
               style={{backgroundImage: `url("${pic1}")`, backgroundSize: 'cover', backgroundPosition: 'center center'}}>
             </div>
-            <Ellipse className={styles.ellipse}/>
           </div>
+          <Ellipse className={styles.ellipse}/>
           <aside className={styles.btnContainer}>
             <CustomButton text="Instagram" inStyle="link" link="https://www.instagram.com/cejas_malaga/"/>
           </aside>
