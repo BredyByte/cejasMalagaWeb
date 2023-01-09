@@ -1,41 +1,52 @@
-import { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
-import styles from './ContactForm.module.css';
+import styles from './ContactForm.module.css'
 import { Checkbox, CustomButton } from '../../components'
 
-export const ContactForm = () => {
-  const form = useRef();
+export const ContactForm = ({reference}) => {
+  const form = useRef()
+  const checkBox = useRef()
+  const [isChecked, setIsChecked] = useState(false)
 
   const defaultFormFields = {
     user_name: '',
     user_email: '',
-    message: '',
+    message: ''
   }
-  const [formFields, setFormFields] = useState(defaultFormFields);
-  const { user_name, user_email, message } = formFields;
+  const [formFields, setFormFields] = useState(defaultFormFields)
+  const {user_name, user_email, message} = formFields
 
   const handleChange = (event) => {
-    const {name, value} = event.target;
-    setFormFields({...formFields,  [name]: value});
-  };
+    const {name, value} = event.target
+    setFormFields({...formFields, [name]: value})
+  }
   const resetFormFields = () => {
-    setFormFields(defaultFormFields);
+    setFormFields(defaultFormFields)
+    setIsChecked(false)
   }
 
+  const showAlert = () => {
+    reference.alert.current.classList.add('active')
+    setTimeout(() => {
+      reference.alert.current.classList.remove('active')
+    }, 2000)
+  };
+
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     emailjs.sendForm('service_b3u908q', 'template_8n34hij', form.current, 'a3wDv2Dis48Xd4fOC')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
+    showAlert();
     resetFormFields();
-  };
+  }
 
   return (
-    <form className={styles.root} onSubmit={sendEmail} ref={form} >
+    <form className={styles.root} onSubmit={sendEmail} ref={form}>
       <div className={styles.inputContainer}>
         <input
           className={`${styles.input} ${(user_name && styles.active)}`}
@@ -45,7 +56,7 @@ export const ContactForm = () => {
           value={user_name}
           required
         />
-        <label className={styles.label}>Name</label>
+        <label className={styles.label}>Имя</label>
       </div>
       <div className={styles.inputContainer}>
         <input
@@ -56,7 +67,7 @@ export const ContactForm = () => {
           value={user_email}
           required
         />
-        <label className={styles.label}>Email</label>
+        <label className={styles.label}>Почта</label>
       </div>
       <div className={styles.inputContainer}>
         <textarea
@@ -66,10 +77,10 @@ export const ContactForm = () => {
           value={message}
           required
         />
-        <label className={styles.label}>Message</label>
+        <label className={styles.label}>Сообщение</label>
       </div>
       <div className={styles.checkboxContainer}>
-        <Checkbox/>
+        <Checkbox reference={checkBox} isChecked={isChecked} setIsChecked={setIsChecked}/>
       </div>
       <CustomButton text="Отправить" type="submit" inStyle="btn"/>
     </form>

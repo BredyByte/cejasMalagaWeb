@@ -186,6 +186,14 @@ a {
 li {
   list-style: none;
 }
+.modalNavActive {
+  top: 0!important;
+  right: 0!important;
+  width: 100vw!important;
+  height: 100vh!important;
+  opacity: 1!important;
+  overflow: visible!important;
+}
 .container {
   max-width: 1040px;
   margin: 0 auto;

@@ -1,9 +1,15 @@
 .root {
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: -40px;
+  right: -40px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
   background: #FFE8E9;
-  z-index: 3;
+  z-index: 100;
   padding: 25px 20px;
+  transition: all .3s;
 }
 .cross {
   position: absolute;

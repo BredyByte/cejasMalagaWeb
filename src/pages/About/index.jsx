@@ -1,11 +1,18 @@
+import { useState } from 'react'
+import CountUp from 'react-countup'
+import { useInView } from 'react-intersection-observer';
+
 import { SectionTitle, CustomButton } from '../../components'
 import pic1 from '../../assets/img/AboutPic.jpeg'
 import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg'
 import { ReactComponent as Ellipse } from '../../assets/img/AboutEllipse.svg'
-
 import styles from './About.module.css'
 
 export const About = ({reference}) => {
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+    triggerOnce: true
+  });
   return (
     <section ref={reference.about} className={`${styles.root} container section`}>
       <SectionTitle
@@ -18,8 +25,11 @@ export const About = ({reference}) => {
       />
       <article className={styles.contentContainer}>
         <aside className={styles.imgContainer}>
-          <div>
-            <img className={styles.img} src={pic1} alt=""/>
+          <div className={styles.imgContentContainer}>
+            <div
+              className={styles.img}
+              style={{backgroundImage: `url("${pic1}")`, backgroundSize: 'cover', backgroundPosition: 'center center'}}>
+            </div>
             <Ellipse className={styles.ellipse}/>
           </div>
           <aside className={styles.btnContainer}>
@@ -57,17 +67,29 @@ export const About = ({reference}) => {
           </li>
         </aside>
       </article>
-      <article className={styles.achievements}>
+      <article className={styles.achievements} ref={ref}>
         <div className={styles.achievItem}>
-          <span className={styles.achievNum}>5</span>
+          <span className={styles.achievNum}>
+            {
+              inView ? <CountUp end={5} duration={2}/> : 0
+            }
+          </span>
           <span className={styles.achievText}>лет опыта работы</span>
         </div>
         <div className={styles.achievItem}>
-          <span className={styles.achievNum}>1000+</span>
+          <span className={styles.achievNum}>
+            {
+              inView ? <CountUp end={100} duration={2}/> : 0
+            }+
+          </span>
           <span className={styles.achievText}>счастливых девушек</span>
         </div>
         <div className={styles.achievItem}>
-          <span className={styles.achievNum}>100%</span>
+          <span className={styles.achievNum}>
+         {
+           inView ? <CountUp end={100} duration={2}/> : 0
+         }%
+          </span>
           <span className={styles.achievText}>результат</span>
         </div>
       </article>

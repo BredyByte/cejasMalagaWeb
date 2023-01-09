@@ -70,23 +70,28 @@ const data =  [
       sliderImgList: [
         {
           id: 1,
-          imgLink: sec1img1
+          imgLink: sec1img1,
+          fancy: "lips",
         },
         {
           id: 2,
-          imgLink: sec1img2
+          imgLink: sec1img2,
+          fancy: "lips",
         },
         {
           id: 3,
-          imgLink: sec1img3
+          imgLink: sec1img3,
+          fancy: "lips",
         },
         {
           id: 4,
-          imgLink: sec1img4
+          imgLink: sec1img4,
+          fancy: "lips",
         },
         {
           id: 5,
-          imgLink: sec1img5
+          imgLink: sec1img5,
+          fancy: "lips",
         },
       ]
     }
@@ -242,31 +247,38 @@ const data =  [
       sliderImgList: [
         {
           id: 1,
-          imgLink: sec5img1
+          imgLink: sec5img1,
+          fancy: "eyebrowDesign",
         },
         {
           id: 2,
-          imgLink: sec5img2
+          imgLink: sec5img2,
+          fancy: "eyebrowDesign",
         },
         {
           id: 3,
-          imgLink: sec5img3
+          imgLink: sec5img3,
+          fancy: "eyebrowDesign",
         },
         {
           id: 4,
-          imgLink: sec5img4
+          imgLink: sec5img4,
+          fancy: "eyebrowDesign",
         },
         {
           id: 5,
-          imgLink: sec5img5
+          imgLink: sec5img5,
+          fancy: "eyebrowDesign",
         },
         {
           id: 6,
-          imgLink: sec5img6
+          imgLink: sec5img6,
+          fancy: "eyebrowDesign",
         },
         {
           id: 7,
-          imgLink: sec5img7
+          imgLink: sec5img7,
+          fancy: "eyebrowDesign",
         },
       ]
     }

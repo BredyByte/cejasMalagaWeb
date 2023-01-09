@@ -33,7 +33,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0px 3.81547px 23.6559px 3.05238px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: transform 0.3s;
 }
 .img:hover {

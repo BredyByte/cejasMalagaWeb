@@ -4,12 +4,12 @@ import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
 import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
 import { RxCross1 } from 'react-icons/rx';
 
-export const ModalNav = () => {
+export const ModalNav = ({reference}) => {
   const navigate = useNavigate();
   return (
-    <div className={styles.root}>
+    <div ref={reference.navMenu} className={styles.root} id="modalNav">
       <span className={styles.cross}>
-        <RxCross1 onClick={() => navigate('/')}/>
+        <RxCross1 onClick={() => reference.navMenu.current.classList.remove("modalNavActive")}/>
       </span>
       <div className={styles.contentContainer}>
         <Logo className={styles.logo}/>

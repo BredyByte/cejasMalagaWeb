@@ -7,42 +7,38 @@ import { ModalNav } from '../../components';
 import { useNavigate } from 'react-router-dom'
 
 
-export const Header = ({refs, scrollToref}) => {
-  const navigate = useNavigate();
+export const Header = ({reference, scrollToRef}) => {
   return (
     <header className={`${styles.root} container section`}>
       <nav className={styles.navigation}>
         <menu className={styles.menu}>
-          <li className={styles.menuItem} onClick={() => scrollToref(refs.about)}>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.about)}>
             <p>Обо мне</p>
           </li>
-          <li className={styles.menuItem} onClick={() => scrollToref(refs.training)}>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.training)}>
             <p>Обучение</p>
           </li>
-          <li className={styles.menuItem} onClick={() => scrollToref(refs.portfolio)}>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.portfolio)}>
             <p>Портфолио</p>
           </li>
-          <li className={styles.menuItem} onClick={() => scrollToref(refs.services)}>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.services)}>
             <p>Услуги</p>
           </li>
         </menu>
         <Logo className={styles.logo}/>
         <menu className={styles.menu}>
-          <li className={styles.menuItem} onClick={() => scrollToref(refs.maps)}>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.maps)}>
             <p>Контакты</p>
           </li>
-          <li className={styles.menuItem} onClick={() => scrollToref(refs.questionnaire)}>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.questionnaire)}>
             <p>Обратная связь</p>
           </li>
           <li className={`${styles.menuItem} ${styles.mapLink}`}>
             <Map/>
             <a href="https://www.google.com/maps/place/%D0%9A%D1%80%D0%B8%D1%81%D1%82%D0%BE+%D0%B4%D0%B5+%D0%BB%D0%B0+%D0%AD%D0%BF%D0%B8%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F,+%D0%9C%D0%B0%D0%BB%D0%B0%D0%B3%D0%B0,+%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/@36.7292463,-4.4165367,17z/data=!3m1!4b1!4m5!3m4!1s0xd72f7c692acd80b:0x760121b3b7423ef0!8m2!3d36.7305945!4d-4.4149938" target= "_blank" rel="noreferrer">Малага</a>
           </li>
-          {/*<li className={`${styles.menuItem} ${styles.language}`}>*/}
-          {/*  <a href="">Язык</a>*/}
-          {/*</li>*/}
         </menu>
-        <span className={styles.burger} onClick={() => navigate('/modal')}>
+        <span className={styles.burger} onClick={() => reference.navMenu.current.classList.add("modalNavActive")}>
           <RxHamburgerMenu/>
         </span>
       </nav>

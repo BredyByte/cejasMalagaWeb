@@ -136,19 +136,23 @@ const data = [
       sliderImgList: [
         {
           id: 1,
-          imgLink: img1
+          imgLink: img1,
+          fancy: "training",
         },
         {
           id: 2,
-          imgLink: img2
+          imgLink: img2,
+          fancy: "training",
         },
         {
           id: 3,
-          imgLink: img3
+          imgLink: img3,
+          fancy: "training",
         },
         {
           id: 4,
-          imgLink: img4
+          imgLink: img4,
+          fancy: "training",
         },
       ]
     }

@@ -1,7 +1,7 @@
 import { CustomButton, SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/img/ServicesEllipse.svg';
-import p1 from '../../assets/img/PortfolioImg.jpg';
+import pic1 from '../../assets/img/PortfolioImg.jpg';
 import { useNavigate } from 'react-router-dom'
 
 import styles from './Services.module.css';
@@ -32,7 +32,11 @@ export const Services = ({reference}) => {
           </ul>
         </aside>
         <aside className={styles.imgSideContainer}>
-          <img className={styles.img} src={p1} alt=""/>
+          <div className={styles.imgContentContainer}>
+            <div className={styles.img} style={{backgroundImage: `url("${pic1}")`, backgroundSize: "cover", backgroundPosition: "center center"}}>
+            </div>
+          </div>
+          {/*<img className={styles.img} src={p1} alt=""/>*/}
           <Ellipse className={styles.ellipse}/>
         </aside>
       </article>

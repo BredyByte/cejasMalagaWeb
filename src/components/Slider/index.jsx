@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 import sliderImg1 from '../../assets/img/servicesLamRis1.jpeg';
+import Fancybox from '../../utils/fancybox';
 
 export const Slider = ({ data }) => {
   const [defaultImage, setDefaultImage] = useState({});
@@ -25,21 +26,6 @@ export const Slider = ({ data }) => {
           slidesToScroll: 1,
         },
       },
-      // {
-      //   breakpoint: 600,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2,
-      //     initialSlide: 2,
-      //   },
-      // },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //   },
-      // },
     ],
   };
 
@@ -53,13 +39,15 @@ export const Slider = ({ data }) => {
 
   return (
     <div className='slider'>
-      <SlickSlider {...settings}>
-        {data.map((i) => (
-          <div key={i.id} className='slideItem'>
-            <img className='img' src={i.imgLink} onError={handleErrorImage} alt="Slider Img" />
-          </div>
-        ))}
-      </SlickSlider>
+      <Fancybox>
+        <SlickSlider {...settings}>
+          {data.map((i) => (
+            <a key={i.id} className='slideItem' href={i.imgLink} data-fancybox={i.fancy}>
+              <img className='img' src={i.imgLink} onError={handleErrorImage} alt="Slider Img" />
+            </a>
+          ))}
+        </SlickSlider>
+      </Fancybox>
     </div>
   );
 };

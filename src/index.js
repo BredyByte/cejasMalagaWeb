@@ -21,10 +21,6 @@ const router = createBrowserRouter([
         path: '/training',
         element: <TrainingAdditionalPage/>
       },
-      {
-        path: '/modal',
-        element: <ModalPage/>,
-      },
     ]
   }
 
