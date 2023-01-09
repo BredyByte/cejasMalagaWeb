@@ -36,7 +36,6 @@ export const Services = ({reference}) => {
             <div className={styles.img} style={{backgroundImage: `url("${pic1}")`, backgroundSize: "cover", backgroundPosition: "center center"}}>
             </div>
           </div>
-          {/*<img className={styles.img} src={p1} alt=""/>*/}
           <Ellipse className={styles.ellipse}/>
         </aside>
       </article>
