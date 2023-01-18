@@ -2,8 +2,8 @@ import { SectionTitle, CustomButton } from '../../components'
 import styles from './Portfolio.module.css'
 import Fancybox from '../../utils/fancybox'
 
-import pic1 from '../../assets/img/servicesGub1.jpg'
-import pic2 from '../../assets/img/servicesGub3.jpg'
+import pic1 from '../../assets/img/servicesGub1.webp'
+import pic2 from '../../assets/img/servicesGub3.webp'
 import pic3 from '../../assets/img/portfolio3.png'
 import { ReactComponent as Start } from '../../assets/img/TrainingStar.svg'
 

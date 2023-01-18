@@ -1,7 +1,7 @@
 import { CustomButton } from '../../components'
 
 import styles from './PrimarySlogan.module.css';
-import pic1 from '../../assets/img/primarySloganImg.jpg';
+import pic1 from '../../assets/img/primarySloganImg.webp';
 import { ReactComponent as ListStart } from '../../assets/img/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/img/PrimarySloganEllipse.svg';
 import { ReactComponent as EllipseOutside } from '../../assets/img/PrimarySloganOutsideEllipse.svg';

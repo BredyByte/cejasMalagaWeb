@@ -1,8 +1,8 @@
 import { SectionTitle, ContactForm } from '../../components';
 import { ReactComponent as QuestElipsWithStar } from '../../assets/img/QuestElipsWithStar.svg'
-import questSecImg1 from '../../assets/img/questSecImg1.png';
-import questSecImg2 from '../../assets/img/questSecImg2.png';
-import questSecImg3 from '../../assets/img/questSecImg3.png';
+import questSecImg1 from '../../assets/img/questsecImg1.webp';
+import questSecImg2 from '../../assets/img/questsecImg2.webp';
+import questSecImg3 from '../../assets/img/questsecImg3.webp';
 import styles from './Questionnaire.module.css';
 import Fancybox from '../../utils/fancybox';
 
