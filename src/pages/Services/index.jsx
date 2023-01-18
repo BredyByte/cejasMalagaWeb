@@ -1,7 +1,7 @@
 import { CustomButton, SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/img/ServicesEllipse.svg';
-import pic1 from '../../assets/img/PortfolioImg.jpg';
+import pic1 from '../../assets/img/portfolioImg.jpg';
 import { useNavigate } from 'react-router-dom'
 
 import styles from './Services.module.css';

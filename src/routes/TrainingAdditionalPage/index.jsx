@@ -1,5 +1,5 @@
 import { AdditionalPage } from '../../pages';
-import { img2, img4, img1, img3 } from '../../assets/img/trainingPageExports';
+import { img1, img3, img4, img2 } from '../../assets/img/trainingPageExports';
 
 const data = [
   {

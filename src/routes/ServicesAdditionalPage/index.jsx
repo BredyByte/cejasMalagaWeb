@@ -172,27 +172,33 @@ const data =  [
       sliderImgList: [
         {
           id: 1,
-          imgLink: sec3img1
+          imgLink: sec3img1,
+          fancy: "lamRis",
         },
         {
           id: 2,
-          imgLink: sec3img2
+          imgLink: sec3img2,
+          fancy: "lamRis",
         },
         {
           id: 3,
-          imgLink: sec3img3
+          imgLink: sec3img3,
+          fancy: "lamRis",
         },
         {
           id: 4,
-          imgLink: sec3img4
+          imgLink: sec3img4,
+          fancy: "lamRis",
         },
         {
           id: 5,
-          imgLink: sec3img5
+          imgLink: sec3img5,
+          fancy: "lamRis",
         },
         {
           id: 6,
-          imgLink: sec3img6
+          imgLink: sec3img6,
+          fancy: "lamRis",
         },
       ]
     }

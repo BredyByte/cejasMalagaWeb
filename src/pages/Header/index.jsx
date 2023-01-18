@@ -1,10 +1,7 @@
 import styles from './Header.module.css';
 import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
 import { ReactComponent as Map } from '../../assets/img/mapPointer.svg';
-import { useEffect, useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { ModalNav } from '../../components';
-import { useNavigate } from 'react-router-dom'
 
 
 export const Header = ({reference, scrollToRef}) => {

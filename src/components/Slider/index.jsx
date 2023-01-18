@@ -3,11 +3,11 @@ import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
-import sliderImg1 from '../../assets/img/servicesLamRis1.jpeg';
+import sliderImg1 from '../../assets/img/servicesLamRis1.jpg';
 import Fancybox from '../../utils/fancybox';
 
 export const Slider = ({ data }) => {
-  const [defaultImage, setDefaultImage] = useState({});
+  const [defaultImage, setDefaultImage] = useState(sliderImg1);
   const settings = {
     dots: true,
     infinite: false,
@@ -17,6 +17,7 @@ export const Slider = ({ data }) => {
     initialSlide: 0,
     arrows: false,
     dotsClass: 'slickDots',
+    defaultImage: defaultImage,
     customPaging: i => <button className='dotItem'></button>,
     responsive: [
       {

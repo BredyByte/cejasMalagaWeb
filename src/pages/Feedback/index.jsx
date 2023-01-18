@@ -1,7 +1,7 @@
 import { SectionTitle, CustomButton } from '../../components'
-import feedback1 from '../../assets/img/feedback1.jpeg';
-import feedback2 from '../../assets/img/feedback2.jpeg';
-import feedback3 from '../../assets/img/feedback3.jpeg';
+import feedback1 from '../../assets/img/feedback1.jpg';
+import feedback2 from '../../assets/img/feedback2.jpg';
+import feedback3 from '../../assets/img/feedback3.jpg';
 import { ReactComponent as SmallStar } from '../../assets/img/SmallFeetbackStar.svg';
 import { ReactComponent as BigStar } from '../../assets/img/BigFeetbackStar.svg';
 import Fancybox from '../../utils/fancybox';
