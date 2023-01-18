@@ -14,14 +14,27 @@ import {
 import { ScrollToTop, ModalNav, AlerPopUp } from '../../components'
 import styles from './Main.module.css';
 import { useEffect, useRef, useState } from 'react'
-import { useInView } from 'react-spring'
 
 const Main = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const scrollToRef = ref => window.scrollTo({
     top: ref.current.offsetTop,
     behavior: 'smooth'
   });
+  useEffect(() => {
+    const onPageLoad = () => {
+      setIsLoaded(true);
+    };
+
+    // событие onLoad почиать
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0,0);
@@ -38,6 +51,9 @@ const Main = () => {
     questionnaire: useRef(null),
     maps: useRef(null),
     alert: useRef(null)
+  }
+  if (!isLoaded) {
+    return (<div>Loading...</div>)
   }
   return (
     <div className={`${styles.root} ${isActive && styles.active}`}>
