@@ -10,34 +10,33 @@ import {
   Header,
   PrimarySlogan,
   About
-} from '../../pages';
-import { ScrollToTop, ModalNav, AlerPopUp } from '../../components'
-import styles from './Main.module.css';
+} from '../../pages'
+import { ScrollToTop, ModalNav, AlerPopUp, Loader } from '../../components'
+import styles from './Main.module.css'
 import { useEffect, useRef, useState } from 'react'
 
 const Main = () => {
-  const [isActive, setIsActive] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isActive, setIsActive] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false)
   const scrollToRef = ref => window.scrollTo({
     top: ref.current.offsetTop,
     behavior: 'smooth'
-  });
+  })
   useEffect(() => {
     const onPageLoad = () => {
-      setIsLoaded(true);
-    };
-
-    // событие onLoad почиать
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      window.addEventListener('load', onPageLoad);
-      return () => window.removeEventListener('load', onPageLoad);
+      setIsLoaded(true)
     }
-  }, []);
+
+    if (document.readyState === 'complete') {
+      onPageLoad()
+    } else {
+      window.addEventListener('load', onPageLoad)
+      return () => window.removeEventListener('load', onPageLoad)
+    }
+  }, [])
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0)
     setIsActive(true)
   }, [])
 
@@ -52,9 +51,11 @@ const Main = () => {
     maps: useRef(null),
     alert: useRef(null)
   }
+
   if (!isLoaded) {
-    return (<div>Loading...</div>)
+    return <Loader/>
   }
+
   return (
     <div className={`${styles.root} ${isActive && styles.active}`}>
       <AlerPopUp reference={refs}/>
@@ -72,7 +73,7 @@ const Main = () => {
       <Maps reference={refs}/>
       <Footer reference={refs} scrollToRef={scrollToRef}/>
     </div>
-  );
+  )
 }
 
-export default Main;
+export default Main

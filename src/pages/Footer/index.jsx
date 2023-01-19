@@ -1,12 +1,10 @@
-import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
+import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
 import styles from './Footer.module.css';
 
 export const Footer = ({ reference, scrollToRef }) => {
   return (
     <footer className={`${styles.root} container`}>
-      <button>
-        <Logo className={styles.logo} />
-      </button>
+      <Logo className={styles.logo} />
       <menu className={styles.menu}>
         <li className={styles.menuItem} onClick={() => scrollToRef(reference.about)}><p>Обо мне</p></li>
         <li className={styles.menuItem} onClick={() => scrollToRef(reference.training)}><p>Обучение</p></li>

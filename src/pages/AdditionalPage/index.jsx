@@ -1,5 +1,5 @@
 import styles from './AdditionalPage.module.css';
-import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
+import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
 import { DropDownList, CustomButton } from '../../components';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react'

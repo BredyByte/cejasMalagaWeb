@@ -1,7 +1,7 @@
 import styles from './ModalNav.module.css';
 import { useNavigate } from 'react-router-dom'
-import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
-import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
+import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
+import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
 import { RxCross1 } from 'react-icons/rx';
 
 export const ModalNav = ({reference}) => {

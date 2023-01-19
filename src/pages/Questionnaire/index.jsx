@@ -1,5 +1,5 @@
 import { SectionTitle, ContactForm } from '../../components';
-import { ReactComponent as QuestElipsWithStar } from '../../assets/img/QuestElipsWithStar.svg'
+import { ReactComponent as QuestElipsWithStar } from '../../assets/svg/QuestElipsWithStar.svg'
 import questSecImg1 from '../../assets/img/questsecImg1.webp';
 import questSecImg2 from '../../assets/img/questsecImg2.webp';
 import questSecImg3 from '../../assets/img/questsecImg3.webp';

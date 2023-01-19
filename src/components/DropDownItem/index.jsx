@@ -1,7 +1,7 @@
 import styles from './DropDownItem.module.css';
 import { useRef, useState } from 'react';
 import { Slider, CustomButton } from '../../components'
-import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
+import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 
 export const DropDownItem = ({ title, content, price }) => {
   const contentRef = useRef(null);

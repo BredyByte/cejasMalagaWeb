@@ -1,5 +1,5 @@
 import { SectionTitle } from '../../components';
-import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
+import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 import styles from './Maps.module.css';
 
 export const Maps = ({reference}) => {

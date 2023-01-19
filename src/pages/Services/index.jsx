@@ -1,6 +1,6 @@
 import { CustomButton, SectionTitle } from '../../components';
-import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
-import { ReactComponent as Ellipse } from '../../assets/img/ServicesEllipse.svg';
+import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
+import { ReactComponent as Ellipse } from '../../assets/svg/ServicesEllipse.svg';
 import pic1 from '../../assets/img/portfolioImg.webp';
 import { useNavigate } from 'react-router-dom'
 

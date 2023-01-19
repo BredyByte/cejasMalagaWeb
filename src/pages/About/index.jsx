@@ -3,8 +3,8 @@ import { useInView } from 'react-intersection-observer';
 
 import { SectionTitle, CustomButton } from '../../components';
 import pic1 from '../../assets/img/aboutPageImg.webp';
-import { ReactComponent as ListStar } from '../../assets/img/ListStar.svg';
-import { ReactComponent as Ellipse } from '../../assets/img/AboutEllipse.svg';
+import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
+import { ReactComponent as Ellipse } from '../../assets/svg/AboutEllipse.svg';
 import styles from './About.module.css';
 
 export const About = ({reference}) => {

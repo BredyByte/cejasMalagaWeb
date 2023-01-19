@@ -3,8 +3,8 @@ import styles from './Training.module.css'
 import Fancybox from '../../utils/fancybox';
 
 import { img2, img1, img3 } from '../../assets/img/trainingPageExports';
-import { ReactComponent as Ellipse1 } from '../../assets/img/TrainingElipsWithStar1.svg';
-import { ReactComponent as Start } from '../../assets/img/TrainingStar.svg';
+import { ReactComponent as Ellipse1 } from '../../assets/svg/TrainingElipsWithStar1.svg';
+import { ReactComponent as Start } from '../../assets/svg/TrainingStar.svg';
 import { useNavigate } from 'react-router-dom'
 
 export const Training = ({reference}) => {

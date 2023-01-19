@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
-import { ReactComponent as Logo } from '../../assets/img/Logo.svg';
-import { ReactComponent as Map } from '../../assets/img/mapPointer.svg';
+import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
+import { ReactComponent as Map } from '../../assets/svg/mapPointer.svg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 

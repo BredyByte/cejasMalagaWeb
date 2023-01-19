@@ -1,6 +1,6 @@
 import styles from './SecondarySlogan.module.css';
-import { ReactComponent as Stars } from '../../assets/img/StarsSecondarySlogan.svg'
-import { ReactComponent as Ellipse } from '../../assets/img/EllipseSecondarySlogan.svg'
+import { ReactComponent as Stars } from '../../assets/svg/StarsSecondarySlogan.svg'
+import { ReactComponent as Ellipse } from '../../assets/svg/EllipseSecondarySlogan.svg'
 
 export const SecondarySlogan = () => {
   return (
