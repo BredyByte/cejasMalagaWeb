@@ -15,10 +15,10 @@ export const ModalNav = ({reference}) => {
         <Logo className={styles.logo}/>
         <nav className={styles.navigation}>
           <li className={styles.navigationItem}>
-            <p onClick={() => navigate("/training")}>Обучение</p>
+            <p onClick={() => navigate("training")}>Обучение</p>
           </li>
           <li className={styles.navigationItem}>
-            <p onClick={() => navigate("/services")}>Услуги</p>
+            <p onClick={() => navigate("services")}>Услуги</p>
           </li>
         </nav>
         <aside className={styles.info}>

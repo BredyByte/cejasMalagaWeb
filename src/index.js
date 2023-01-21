@@ -3,31 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Main, ServicesAdditionalPage, TrainingAdditionalPage, NotFoundPage } from './routes'
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    errorElement: <NotFoundPage/>,
-    children: [
-      {
-        index: true,
-        element: <Main/>,
-      },
-      {
-        path: '/services',
-        element: <ServicesAdditionalPage/>
-      },
-      {
-        path: '/training',
-        element: <TrainingAdditionalPage/>
-      },
-    ]
-  }
-
-]);
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router} />
+  <HashRouter>
+    <Routes>
+      <Route index element={<Main />} />
+      <Route path='training' element={<TrainingAdditionalPage />} />
+      <Route path='services' element={<ServicesAdditionalPage />} />
+      <Route path='*' element={<NotFoundPage />}/>
+    </Routes>
+  </HashRouter>
 );
