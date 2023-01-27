@@ -5,21 +5,29 @@
 .contentContainer {
   width: 660px;
 }
-.titleContainer h1{
+.title {
   width: 100%;
   font-weight: 200;
   font-size: 82px;
   margin-bottom: 90px;
   line-height: 1;
   text-transform: uppercase;
+  overflow: hidden;
 }
-.titleContainer h1 span {
+.title .titleLineContainer {
+  overflow: hidden;
+}
+.title .titleLineContainer div {
+  position: relative;
+}
+.title  span {
   color: #FFA52D;
 }
 .imgContainer {
   position: absolute;
   top: -100px;
   right: 0;
+  opacity: 0;
 }
 .imgContainer .imgContentContainer {
   position: relative;
@@ -55,6 +63,16 @@
   display: flex;
   align-items: center;
   gap:  10px;
+  overflow: hidden;
+}
+.infoItem div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap:  10px;
+}
+.btnContainer {
+  opacity: 0;
 }
 .outsideEllipse {
   position: absolute;
@@ -70,7 +88,7 @@
     align-items: center;
     justify-items: center;
   }
-  .titleContainer h1{
+  .title{
     max-width: 660px;
     margin-bottom: 30px;
   }
@@ -97,7 +115,7 @@
   .contentContainer {
     width: 100%;
   }
-  .titleContainer h1{
+  .title{
     width: 100%;
     font-weight: 200;
     font-size: 48px;

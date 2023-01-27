@@ -20,6 +20,10 @@
 .menuItem {
   font-size: 13px;
   cursor: pointer;
+  overflow: hidden;
+}
+.menuItem p {
+  position: relative;
 }
 .mapLink {
   display: flex;

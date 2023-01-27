@@ -51,10 +51,10 @@ const Main = () => {
     maps: useRef(null),
     alert: useRef(null)
   }
-
-  if (!isLoaded) {
-    return <Loader/>
-  }
+  //
+  // if (!isLoaded) {
+  //   return <Loader/>
+  // }
 
   return (
     <div className={`${styles.root} ${isActive && styles.active}`}>

@@ -167,6 +167,21 @@ html {
 /*  color: #000;*/
 /*  background: rgba(255, 180, 183, 0.5);*/
 /*}*/
+::-webkit-scrollbar {
+  background: linear-gradient(180deg, rgba(255,180,183, 0.3) 0%, rgba(255,180,183, 0.2) 50%, rgba(255,180,183, 0.1) 100%);
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255,165,45);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
 *::selection {
   color: white;
   background: rgba(255,165,45,0.5);
