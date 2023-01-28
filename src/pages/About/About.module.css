@@ -28,7 +28,7 @@
   transition: transform 1s ease-in-out;
 }
 .img:hover {
-  transform: scale(1.3);
+  transform: scale(1.3)!important;
 }
 .imgContainer .ellipse {
   position: absolute;

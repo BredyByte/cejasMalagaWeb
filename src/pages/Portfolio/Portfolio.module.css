@@ -13,6 +13,9 @@
   margin: 0;
   position: relative;
 }
+.imgContainer span {
+  opacity: 0;
+}
 .imgContainer:nth-child(1), .imgContainer:nth-child(3) {
   position: absolute;
 }

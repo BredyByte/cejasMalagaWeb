@@ -9,9 +9,10 @@
   width: 100%;
   margin-top: 170px;
 }
-.imgContainer {
+.imgContainer span {
   margin: 0;
   position: relative;
+  z-index: 1;
 }
 .imgContainer:nth-child(1), .imgContainer:nth-child(3) {
   position: absolute;
@@ -20,6 +21,7 @@
   top: -100px;
   left: 0;
 }
+
 .imgContainer:nth-child(3) {
   bottom: -100px;
   right: 0;

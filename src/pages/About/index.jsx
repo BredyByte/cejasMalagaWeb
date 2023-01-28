@@ -6,6 +6,9 @@ import pic1 from '../../assets/img/aboutPageImg.webp';
 import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/svg/AboutEllipse.svg';
 import styles from './About.module.css';
+import { motion } from 'framer-motion';
+import { opacityAnimation, scaleAnimation } from '../../utils/animation'
+
 
 export const About = ({reference}) => {
   const { ref, inView } = useInView({
@@ -13,7 +16,13 @@ export const About = ({reference}) => {
     triggerOnce: true
   });
   return (
-    <section ref={reference.about} className={`${styles.root} container section`}>
+    <motion.section
+      className={`${styles.root} container section`}
+      ref={reference.about}
+      viewport={{once: true}}
+      initial="offscreen"
+      whileInView="onscreen"
+    >
       <SectionTitle
         title="Обо мне"
         subtitleFirst="Ваш мастер"
@@ -24,12 +33,17 @@ export const About = ({reference}) => {
       />
       <article className={styles.contentContainer}>
         <aside className={styles.imgContainer}>
-          <div className={styles.imgContentContainer}>
-            <div
+          <motion.div
+            className={styles.imgContentContainer}
+            variants={opacityAnimation}
+          >
+            <motion.div
               className={styles.img}
-              style={{backgroundImage: `url("${pic1}")`, backgroundSize: 'cover', backgroundPosition: 'center center'}}>
-            </div>
-          </div>
+              style={{backgroundImage: `url("${pic1}")`, backgroundSize: 'cover', backgroundPosition: 'center center'}}
+              variants={scaleAnimation}
+            >
+            </motion.div>
+          </motion.div>
           <Ellipse className={styles.ellipse}/>
           <aside className={styles.btnContainer}>
             <CustomButton text="Instagram" inStyle="link" link="https://www.instagram.com/cejas_malaga/"/>
@@ -92,6 +106,6 @@ export const About = ({reference}) => {
           <span className={styles.achievText}>результат</span>
         </div>
       </article>
-    </section>
+    </motion.section>
   )
 }
