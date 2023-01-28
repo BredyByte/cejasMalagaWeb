@@ -7,7 +7,7 @@ import { ReactComponent as Ellipse1 } from '../../assets/svg/TrainingElipsWithSt
 import { ReactComponent as Start } from '../../assets/svg/TrainingStar.svg';
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { opacityAnimation } from '../../utils/animation'
+import { opacityImgAnimation } from '../../utils/animation'
 
 export const Training = ({reference}) => {
   const navigate = useNavigate()
@@ -26,7 +26,7 @@ export const Training = ({reference}) => {
         >
           <a className={`${styles.imgContainer} imgContainer`} href={img1} data-fancybox="training">
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.6,
                 duration: 0.4,
@@ -41,7 +41,7 @@ export const Training = ({reference}) => {
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={img2} data-fancybox="training">
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.4,
                 duration: 0.4,
@@ -53,7 +53,7 @@ export const Training = ({reference}) => {
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={img3} data-fancybox="training">
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.2,
                 duration: 0.4,

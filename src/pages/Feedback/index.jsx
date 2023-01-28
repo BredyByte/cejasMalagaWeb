@@ -8,7 +8,7 @@ import Fancybox from '../../utils/fancybox';
 
 import styles from './Feedback.module.css';
 import { motion } from 'framer-motion'
-import { opacityAnimation } from '../../utils/animation'
+import { opacityImgAnimation } from '../../utils/animation'
 
 export const Feedback = ({reference}) => {
   return (
@@ -23,7 +23,7 @@ export const Feedback = ({reference}) => {
         >
           <a className={`${styles.imgContainer} imgContainer`} data-fancybox="feedback" href={feedback1}>
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.3,
                 duration: 0.4,
@@ -35,7 +35,7 @@ export const Feedback = ({reference}) => {
           </a>
           <a className={`${styles.imgContainer} imgContainer`} data-fancybox="feedback" href={feedback2}>
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.2,
                 duration: 0.4,
@@ -47,7 +47,7 @@ export const Feedback = ({reference}) => {
           </a>
           <a className={`${styles.imgContainer} imgContainer`} data-fancybox="feedback" href={feedback3}>
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.4,
                 duration: 0.4,

@@ -7,7 +7,7 @@ import questSecImg3 from '../../assets/img/questsecImg3.webp'
 import styles from './Questionnaire.module.css'
 import Fancybox from '../../utils/fancybox'
 import { motion } from 'framer-motion'
-import { opacityAnimation } from '../../utils/animation'
+import { opacityImgAnimation } from '../../utils/animation'
 
 export const Questionnaire = ({reference}) => {
   return (
@@ -23,7 +23,7 @@ export const Questionnaire = ({reference}) => {
           <aside className={styles.galleryContainer}>
             <a className={`${styles.imgContainer} imgContainer`} href={questSecImg1} data-fancybox="questionnaire">
               <motion.span
-                variants={opacityAnimation}
+                variants={opacityImgAnimation}
                 transition={{
                   delay: 0.4,
                   duration: 0.2,
@@ -35,7 +35,7 @@ export const Questionnaire = ({reference}) => {
             </a>
             <a className={`${styles.imgContainer} imgContainer`} href={questSecImg2} data-fancybox="questionnaire">
               <motion.span
-                variants={opacityAnimation}
+                variants={opacityImgAnimation}
                 transition={{
                   delay: 0.3,
                   duration: 0.2,
@@ -47,7 +47,7 @@ export const Questionnaire = ({reference}) => {
             </a>
             <a className={`${styles.imgContainer} imgContainer`} href={questSecImg3} data-fancybox="questionnaire">
               <motion.span
-                variants={opacityAnimation}
+                variants={opacityImgAnimation}
                 transition={{
                   delay: 0.2,
                   duration: 0.2,

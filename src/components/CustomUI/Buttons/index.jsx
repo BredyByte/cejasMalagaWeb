@@ -12,11 +12,6 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         initial="offscreen"
         whileInView="onscreen"
         variants={opacityAnimation}
-        transition={{
-          delay: 0.3,
-          duration: 0.6,
-          type: "tween",
-        }}
       >
         <span>{text}</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -36,11 +31,6 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         initial="offscreen"
         whileInView="onscreen"
         variants={opacityAnimation}
-        transition={{
-          delay: 0.3,
-          duration: 0.6,
-          type: "tween",
-        }}
       >
         <span>{text}</span>
         <motion.svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -58,11 +48,6 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         initial="offscreen"
         whileInView="onscreen"
         variants={opacityAnimation}
-        transition={{
-          delay: 0.3,
-          duration: 0.6,
-          type: "tween",
-        }}
       >
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <polyline points="8 1 12 5 8 9"></polyline>

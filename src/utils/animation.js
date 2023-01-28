@@ -19,6 +19,16 @@ export const opacityAnimation = {
   },
   onscreen: {
     opacity: 1,
+    transition
+  }
+}
+
+export const opacityImgAnimation = {
+  offscreen: {
+    opacity: 0
+  },
+  onscreen: {
+    opacity: 1,
   }
 }
 

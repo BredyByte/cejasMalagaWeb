@@ -66,27 +66,14 @@ export const PrimarySlogan = () => {
           <aside className={styles.infoContainer}>
             <ul className={styles.infoList}>
               <li className={styles.infoItem}>
-                <motion.div
-                  variants={textFromBottomAppearance}
-                  transition={{
-                    type: 'tween',
-                    duration: 0.4,
-                    delay: 1.4
-                  }}
+                <motion.div variants={opacityAnimation}
                 >
                   <ListStart/>
                   <span>Провела более 50 обучений</span>
                 </motion.div>
               </li>
               <li className={styles.infoItem}>
-                <motion.div
-                  variants={textFromBottomAppearance}
-                  transition={{
-                    type: 'tween',
-                    duration: 0.4,
-                    delay: 1.4
-                  }}
-                >
+                <motion.div variants={opacityAnimation}>
                   <ListStart/>
                   <span>Преподаватель авторского курса</span>
                 </motion.div>

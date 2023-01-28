@@ -8,7 +8,7 @@ import pic2 from '../../assets/img/servicesGub3.webp'
 import pic3 from '../../assets/img/portfolio3.webp'
 import { ReactComponent as Start } from '../../assets/svg/TrainingStar.svg'
 import { motion } from 'framer-motion'
-import { opacityAnimation } from '../../utils/animation'
+import { opacityImgAnimation } from '../../utils/animation'
 
 export const Portfolio = ({reference}) => {
   return (
@@ -26,7 +26,7 @@ export const Portfolio = ({reference}) => {
         >
           <a className={`${styles.imgContainer} imgContainer`} href={pic1} data-fancybox="portfolio">
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.2,
                 duration: 0.4,
@@ -38,7 +38,7 @@ export const Portfolio = ({reference}) => {
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={pic2} data-fancybox="portfolio">
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.3,
                 duration: 0.4,
@@ -50,7 +50,7 @@ export const Portfolio = ({reference}) => {
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={pic3} data-fancybox="portfolio">
             <motion.span
-              variants={opacityAnimation}
+              variants={opacityImgAnimation}
               transition={{
                 delay: 0.4,
                 duration: 0.4,

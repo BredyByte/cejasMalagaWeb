@@ -2,9 +2,11 @@ import { CustomButton, SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/svg/ServicesEllipse.svg';
 import pic1 from '../../assets/img/portfolioImg.webp';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 import styles from './Services.module.css';
+import { motion } from 'framer-motion';
+import { opacityAnimation, scaleAnimation } from '../../utils/animation'
 
 export const Services = ({reference}) => {
   const navigate = useNavigate()
@@ -12,7 +14,13 @@ export const Services = ({reference}) => {
     navigate('/services')
   }
   return (
-    <section ref={reference.services} className={`${styles.root} container section`}>
+    <motion.section
+      ref={reference.services}
+      className={`${styles.root} container section`}
+      viewport={{once: true}}
+      initial="offscreen"
+      whileInView="onscreen"
+    >
       <SectionTitle title="Услуги" subtitleFirst="Предоставляю" subtitleSecond="лучшие услуги" isMargin={true}/>
       <article className={styles.contentContainer}>
         <aside className={styles.servicesListContainer}>
@@ -31,17 +39,21 @@ export const Services = ({reference}) => {
             </li>
           </ul>
         </aside>
-        <aside className={styles.imgSideContainer}>
+        <motion.aside className={styles.imgSideContainer} variants={opacityAnimation}>
           <div className={styles.imgContentContainer}>
-            <div className={styles.img} style={{backgroundImage: `url("${pic1}")`, backgroundSize: "cover", backgroundPosition: "center center"}}>
-            </div>
+            <motion.div
+              className={styles.img}
+              style={{backgroundImage: `url("${pic1}")`, backgroundSize: "cover", backgroundPosition: "center center"}}
+              variants={scaleAnimation}
+            >
+            </motion.div>
           </div>
           <Ellipse className={styles.ellipse}/>
-        </aside>
+        </motion.aside>
       </article>
       <aside className={styles.buttonContainer}>
         <CustomButton text="Все услуги" inStyle="btn" func={onClickNavigate}/>
       </aside>
-    </section>
+    </motion.section>
   )
 }
