@@ -1,5 +1,5 @@
 import styles from './SectionsTitle.module.css';
-import { textFromBottomAppearance, textFromTopAppearance } from '../../utils/animation';
+import { textFromTopAppearance } from '../../utils/animation';
 import { motion } from 'framer-motion';
 
 export const SectionTitle = ({subtitleFirst, subtitleSecond, title, isMargin, isPadding = true, isBold}) => {
@@ -10,25 +10,32 @@ export const SectionTitle = ({subtitleFirst, subtitleSecond, title, isMargin, is
       initial="offscreen"
       whileInView="onscreen"
     >
+      <motion.div
+        className={styles.borderLine}
+        variants={{
+          offscreen: {
+            height: 0
+          },
+          onscreen: {
+            height: "100%",
+          }
+        }}
+        transition={{
+          delay: 0.6,
+          duration: 0.6,
+          type: "tween",
+        }}
+      ></motion.div>
       <h2 className={styles.title}>
         <motion.div
-          variants={textFromTopAppearance}
-          transition={{
-            type: "tween",
-            duration: 0.5,
-          }}
+          variants={textFromTopAppearance(0)}
         >{title}</motion.div>
       </h2>
       <div className={styles.subtitleContainer}>
         <h3 className={styles.subtitle}>
           <div className={styles.subtitleLineContainer}>
             <motion.div
-              variants={textFromTopAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.5,
-                delay: 0.2,
-              }}
+              variants={textFromTopAppearance(0.2)}
             >
               {subtitleFirst}
             </motion.div>
@@ -40,12 +47,7 @@ export const SectionTitle = ({subtitleFirst, subtitleSecond, title, isMargin, is
             ${isBold && styles.fontBold}`}
           >
             <motion.div
-              variants={textFromTopAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.5,
-                delay: 0.4,
-              }}
+              variants={textFromTopAppearance(0.4)}
             >
               {subtitleSecond}
             </motion.div>

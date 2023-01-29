@@ -1,4 +1,4 @@
-import styles from './AlerPopUp.css';
+import'./AlerPopUp.css';
 
 export const AlerPopUp = ({ reference }) => {
   return (
@@ -6,5 +6,5 @@ export const AlerPopUp = ({ reference }) => {
       Письмо успешно отправлено!
     </div>
   )
-}
+};
 

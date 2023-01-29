@@ -1,8 +1,16 @@
-const transition = {
-  type: "tween",
-  duration: 0.6,
-  delay: 0.3
-}
+export const widthIncrementAnimation = {
+  offscreen: {
+    width: 0
+  },
+  onscreen: {
+    width: '100%',
+    transition: {
+      duration: 0.6,
+      type: 'tween',
+      delay: 1.1,
+    }
+  }
+};
 
 export const scaleAnimation = {
   offscreen: {
@@ -11,28 +19,25 @@ export const scaleAnimation = {
   onscreen: {
     transform: "scale(1)",
   }
-}
+};
 
-export const opacityAnimation = {
-  offscreen: {
-    opacity: 0
-  },
-  onscreen: {
-    opacity: 1,
-    transition
+export const opacityAnimation = (delay = 0.4, duration = 0.4) => (
+  {
+    offscreen: {
+      opacity: 0
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        duration,
+        type: 'tween',
+        delay
+      }
+    }
   }
-}
+);
 
-export const opacityImgAnimation = {
-  offscreen: {
-    opacity: 0
-  },
-  onscreen: {
-    opacity: 1,
-  }
-}
-
-export const headerAnimation =  {
+export const xFromRightAnimation =  {
   offscreen: {
     opacity: 0,
     x: 200
@@ -40,24 +45,42 @@ export const headerAnimation =  {
   onscreen: {
     opacity: 1,
     x: 0,
-    transition
+    transition: {
+      type: "tween",
+      duration: 0.4,
+      delay: 0.4
+    }
   }
 };
 
-export const textFromBottomAppearance = {
-  offscreen: {
-    top: "100%"
-  },
-  onscreen: {
-    top: "0",
+export const textFromBottomAppearance = (delay = 0.2, duration = 0.4) => (
+  {
+    offscreen: {
+      top: '100%'
+    },
+    onscreen: {
+      top: '0',
+      transition: {
+        duration,
+        type: 'tween',
+        delay
+      }
+    }
   }
-}
+);
 
-export const textFromTopAppearance = {
-  offscreen: {
-    top: "-100%"
-  },
-  onscreen: {
-    top: "0"
+export const textFromTopAppearance = (delay = 0.2, duration = 0.4) => (
+  {
+    offscreen: {
+      top: '-100%'
+    },
+    onscreen: {
+      top: '0',
+      transition: {
+        duration,
+        type: 'tween',
+        delay
+      }
+    }
   }
-}
+);

@@ -1,33 +1,44 @@
 .root {
   position: fixed;
-  top: -40px;
-  right: -40px;
-  width: 0;
-  height: 0;
-  opacity: 0;
+  left: 100%;
+  width: 100vw;
+  height: 120vh;
   overflow: hidden;
   background: #FFE8E9;
   z-index: 100;
   padding: 25px 20px;
-  transition: all .3s;
+  transition: left .6s ease-in-out;
 }
 .cross {
   position: absolute;
   top: 35px;
-  right: 20px;
+  right: 40px;
   width: 30px;
   height: 30px;
   cursor: pointer;
+  z-index: 1;
 }
 .cross svg {
   width: 100%;
   height: 100%;
 }
 .contentContainer {
+  position: relative;
   display: flex;
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.contentContainer .bottomLine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  border-radius: 10px;
+  background-color: #FFA52D;
 }
 .logo {
   width: 200px;
@@ -45,11 +56,19 @@
   gap: 15px 0;
 }
 .navigationItem {
+  overflow: hidden;
   cursor: pointer;
 }
-.navigationItem, .announcement{
+.navigationItem p {
+  position: relative;
+}
+.navigationItem, .announcement {
+  overflow: hidden;
   font-weight: 500;
   font-size: 15px;
+}
+.navigationItem, .announcement span {
+  position: relative;
 }
 .announcement {
   max-width: 250px;
@@ -61,6 +80,10 @@
   gap: 25px 0;
 }
 .connectionItem {
+  overflow: hidden;
+}
+.connectionItem span {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0 6px;

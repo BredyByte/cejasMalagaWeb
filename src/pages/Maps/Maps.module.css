@@ -23,6 +23,10 @@
   text-transform: uppercase;
   font-size: 15px;
 }
+.connectionLink svg {
+  min-height: 26px;
+  min-width: 26px;
+}
 .connectionLink + .connectionLink {
   padding-top: 25px;
 }

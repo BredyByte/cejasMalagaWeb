@@ -1,4 +1,4 @@
-import CountUp from 'react-countup'
+import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
 import { SectionTitle, CustomButton } from '../../components';
@@ -7,14 +7,14 @@ import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/svg/AboutEllipse.svg';
 import styles from './About.module.css';
 import { motion } from 'framer-motion';
-import { opacityAnimation, scaleAnimation } from '../../utils/animation'
-
+import { opacityAnimation, scaleAnimation } from '../../utils/animation';
 
 export const About = ({reference}) => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true
   });
+
   return (
     <motion.section
       className={`${styles.root} container section`}
@@ -33,16 +33,12 @@ export const About = ({reference}) => {
       />
       <article className={styles.contentContainer}>
         <aside className={styles.imgContainer}>
-          <motion.div
-            className={styles.imgContentContainer}
-            variants={opacityAnimation}
-          >
+          <motion.div className={styles.imgContentContainer} variants={opacityAnimation()}>
             <motion.div
               className={styles.img}
               style={{backgroundImage: `url("${pic1}")`, backgroundSize: 'cover', backgroundPosition: 'center center'}}
               variants={scaleAnimation}
-            >
-            </motion.div>
+            ></motion.div>
           </motion.div>
           <Ellipse className={styles.ellipse}/>
           <aside className={styles.btnContainer}>

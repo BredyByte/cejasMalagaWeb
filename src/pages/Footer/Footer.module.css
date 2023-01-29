@@ -31,7 +31,6 @@
 .linkItem a{
   margin-left: 10px;
   border-bottom: 1px solid #FFA52D;
-
 }
 .linkItem + .linkItem{
   margin-top: 15px;

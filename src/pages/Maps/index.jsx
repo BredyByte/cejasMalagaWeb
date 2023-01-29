@@ -1,6 +1,8 @@
 import { SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 import styles from './Maps.module.css';
+import { personalLinkList } from '../../utils/mapData';
+
 
 export const Maps = ({reference}) => {
   return (
@@ -18,30 +20,16 @@ export const Maps = ({reference}) => {
             Вы можете связаться со мной в будние дни с 10:00-20:00
           </h6>
           <ul className={styles.connectionList}>
-            <li className={styles.connectionLink}>
-              <ListStar/>
-              <a href="https://goo.gl/maps/e6GZSVoznfLFvHn27" target="_blank" rel="noreferrer">
-                calle cristo de la epidemia 93
-              </a>
-            </li>
-            <li className={styles.connectionLink}>
-              <ListStar/>
-              <a href='mailto:Chihiryova@ya.ru' target="_blank" rel="noreferrer">
-                Chihiryova@ya.ru
-              </a>
-            </li>
-            <li className={styles.connectionLink}>
-              <ListStar/>
-              <a href='https://www.instagram.com/cejas_malaga/' target="_blank" rel="noreferrer">
-                Instagram
-              </a>
-            </li>
-            <li className={styles.connectionLink}>
-              <ListStar/>
-              <a href='https://wa.me/message/ODU4EVFS7R36N1' target="_blank" rel="noreferrer">
-                Whatsapp
-              </a>
-            </li>
+            {
+              personalLinkList.map(i => (
+                <li className={styles.connectionLink}>
+                  <ListStar/>
+                  <a href={i.link} target="_blank" rel="noreferrer">
+                    {i.text}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </aside>
       </section>

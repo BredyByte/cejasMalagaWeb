@@ -2,7 +2,7 @@ import styles from './AdditionalPage.module.css';
 import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
 import { DropDownList, CustomButton } from '../../components';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 export const AdditionalPage = ({data, title}) => {
   const [isActive, setIsActive] = useState(false);
@@ -10,7 +10,7 @@ export const AdditionalPage = ({data, title}) => {
 
   const onClick = () => {
     navigate("/");
-  }
+  };
 
   useEffect(() => {
     window.scrollTo(0,0);
@@ -36,4 +36,4 @@ export const AdditionalPage = ({data, title}) => {
       </div>
     </div>
   )
-}
+};

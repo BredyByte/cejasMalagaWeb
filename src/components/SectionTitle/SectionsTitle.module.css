@@ -1,7 +1,15 @@
 .root {
-  border-left: 3px solid #FFA52D;
+  position: relative;
   padding-left: 30px;
   margin-bottom: 70px;
+}
+.borderLine {
+  position: absolute;
+  width: 3px;
+  background-color: #FFA52D;
+  left: 0;
+  border-radius: 10px;
+  top: 0;
 }
 .marginLeft70 {
   margin-left: 70px;
@@ -57,16 +65,6 @@
   }
   .subtitle .second {
     padding-left: 0;
-  }
-  .subtitle::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90px;
-    height: 3px;
-    background: #FFA52D;
   }
   .title {
     font-size: 12px;

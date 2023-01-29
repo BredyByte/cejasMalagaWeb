@@ -1,13 +1,13 @@
-import { SectionTitle, ContactForm } from '../../components'
-import { ReactComponent as QuestElipsWithStar } from '../../assets/svg/QuestElipsWithStar.svg'
+import Fancybox from '../../utils/fancybox';
+import { motion } from 'framer-motion';
 
-import questSecImg1 from '../../assets/img/questsecImg1.webp'
-import questSecImg2 from '../../assets/img/questsecImg2.webp'
-import questSecImg3 from '../../assets/img/questsecImg3.webp'
-import styles from './Questionnaire.module.css'
-import Fancybox from '../../utils/fancybox'
-import { motion } from 'framer-motion'
-import { opacityImgAnimation } from '../../utils/animation'
+import { SectionTitle, ContactForm } from '../../components';
+import { ReactComponent as QuestElipsWithStar } from '../../assets/svg/QuestElipsWithStar.svg';
+import questSecImg1 from '../../assets/img/questsecImg1.webp';
+import questSecImg2 from '../../assets/img/questsecImg2.webp';
+import questSecImg3 from '../../assets/img/questsecImg3.webp';
+import styles from './Questionnaire.module.css';
+import { opacityAnimation } from '../../utils/animation';
 
 export const Questionnaire = ({reference}) => {
   return (
@@ -22,38 +22,17 @@ export const Questionnaire = ({reference}) => {
         >
           <aside className={styles.galleryContainer}>
             <a className={`${styles.imgContainer} imgContainer`} href={questSecImg1} data-fancybox="questionnaire">
-              <motion.span
-                variants={opacityImgAnimation}
-                transition={{
-                  delay: 0.4,
-                  duration: 0.2,
-                  type: 'tween'
-                }}
-              >
+              <motion.span variants={opacityAnimation()}>
                 <img className={styles.img} src={questSecImg1} alt=""/>
               </motion.span>
             </a>
             <a className={`${styles.imgContainer} imgContainer`} href={questSecImg2} data-fancybox="questionnaire">
-              <motion.span
-                variants={opacityImgAnimation}
-                transition={{
-                  delay: 0.3,
-                  duration: 0.2,
-                  type: "tween",
-                }}
-              >
+              <motion.span variants={opacityAnimation(0.3)}>
                 <img className={styles.img} src={questSecImg2} alt=""/>
               </motion.span>
             </a>
             <a className={`${styles.imgContainer} imgContainer`} href={questSecImg3} data-fancybox="questionnaire">
-              <motion.span
-                variants={opacityImgAnimation}
-                transition={{
-                  delay: 0.2,
-                  duration: 0.2,
-                  type: "tween",
-                }}
-              >
+              <motion.span variants={opacityAnimation(0.2)}>
                 <img className={styles.img} src={questSecImg3} alt=""/>
               </motion.span>
             </a>
@@ -71,4 +50,4 @@ export const Questionnaire = ({reference}) => {
       </Fancybox>
     </section>
   )
-}
+};

@@ -2,6 +2,8 @@
 
 }
 .navigation {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +48,6 @@
   width: 100%;
   height: 100%;
 }
-
 @media (max-width: 1040px) {
   .root {
     margin-bottom: 0!important;

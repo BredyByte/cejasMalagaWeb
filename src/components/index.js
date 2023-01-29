@@ -8,4 +8,3 @@ export { ScrollToTop } from './ScrollToTop';
 export { DropDownList } from './DropDownList';
 export { DropDownItem } from './DropDownItem';
 export { AlerPopUp } from './AlerPopUp';
-export { Loader } from './Loader';

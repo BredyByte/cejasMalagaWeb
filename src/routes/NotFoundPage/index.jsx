@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import styles from './NotFoundPage.module.css';
 import { CustomButton } from '../../components/CustomUI/Buttons';
-import { useNavigate } from 'react-router-dom';
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
@@ -22,5 +23,5 @@ const NotFoundPage = () => {
       </div>
     </div>
   )
-}
-export default NotFoundPage
+};
+export default NotFoundPage;

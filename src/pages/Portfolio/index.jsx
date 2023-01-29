@@ -1,14 +1,13 @@
-import { SectionTitle, CustomButton } from '../../components'
-import styles from './Portfolio.module.css'
-import Fancybox from '../../utils/fancybox'
+import Fancybox from '../../utils/fancybox';
+import { motion } from 'framer-motion';
 
-
-import pic1 from '../../assets/img/servicesGub1.webp'
-import pic2 from '../../assets/img/servicesGub3.webp'
-import pic3 from '../../assets/img/portfolio3.webp'
-import { ReactComponent as Start } from '../../assets/svg/TrainingStar.svg'
-import { motion } from 'framer-motion'
-import { opacityImgAnimation } from '../../utils/animation'
+import { SectionTitle, CustomButton } from '../../components';
+import styles from './Portfolio.module.css';
+import pic1 from '../../assets/img/servicesGub1.webp';
+import pic2 from '../../assets/img/servicesGub3.webp';
+import pic3 from '../../assets/img/portfolio3.webp';
+import { ReactComponent as Start } from '../../assets/svg/TrainingStar.svg';
+import { opacityAnimation } from '../../utils/animation';
 
 export const Portfolio = ({reference}) => {
   return (
@@ -25,41 +24,19 @@ export const Portfolio = ({reference}) => {
           whileInView="onscreen"
         >
           <a className={`${styles.imgContainer} imgContainer`} href={pic1} data-fancybox="portfolio">
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.2,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation(0.2)}>
               <img className={styles.img} src={pic1} alt="Profile work img"/>
             </motion.span>
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={pic2} data-fancybox="portfolio">
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.3,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation(0.3)}>
               <img className={styles.img} src={pic2} alt="Profile work img"/>
             </motion.span>
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={pic3} data-fancybox="portfolio">
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.4,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation()}>
               <img className={styles.img} src={pic3} alt="Profile work img"/>
             </motion.span>
-
             <aside className={styles.smallStar}>
               <Start/>
             </aside>

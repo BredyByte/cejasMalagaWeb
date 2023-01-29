@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 html, body {
   overflow-x: hidden;
@@ -161,7 +164,6 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-
 }
 /**::selection {*/
 /*  color: #000;*/
@@ -171,12 +173,10 @@ html {
   background: linear-gradient(180deg, rgba(255,180,183, 0.3) 0%, rgba(255,180,183, 0.2) 50%, rgba(255,180,183, 0.1) 100%);
   width: 0.4rem;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: rgb(255,165,45);
   border-radius: 4px;
 }
-
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   body::-webkit-scrollbar {
     display: none;
@@ -202,10 +202,7 @@ li {
   list-style: none;
 }
 .modalNavActive {
-  top: 0!important;
-  right: 0!important;
-  width: 100vw!important;
-  height: 120vh!important;
+  left: 0!important;
   opacity: 1!important;
   overflow: visible!important;
 }

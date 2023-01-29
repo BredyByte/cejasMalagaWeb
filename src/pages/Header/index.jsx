@@ -1,9 +1,9 @@
-import styles from './Header.module.css'
-import { ReactComponent as Logo } from '../../assets/svg/Logo.svg'
-import { ReactComponent as Map } from '../../assets/svg/mapPointer.svg'
-import { RxHamburgerMenu } from 'react-icons/rx'
-import { motion } from 'framer-motion'
-import { textFromBottomAppearance, opacityAnimation } from '../../utils/animation'
+import styles from './Header.module.css';
+import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
+import { ReactComponent as Map } from '../../assets/svg/mapPointer.svg';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { motion } from 'framer-motion';
+import { textFromBottomAppearance, opacityAnimation } from '../../utils/animation';
 
 
 export const Header = ({reference, scrollToRef}) => {
@@ -18,79 +18,44 @@ export const Header = ({reference, scrollToRef}) => {
         <menu className={styles.menu}>
           <li className={styles.menuItem} onClick={() => scrollToRef(reference.about)}>
             <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 0
-              }}
+              variants={textFromBottomAppearance(0)}
             >Обо мне</motion.p>
-          </li>
-          <li className={styles.menuItem} onClick={() => scrollToRef(reference.training)}>
-            <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 0.2
-              }}
-            >Обучение</motion.p>
           </li>
           <li className={styles.menuItem} onClick={() => scrollToRef(reference.portfolio)}>
             <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 0.4
-              }}
+              variants={textFromBottomAppearance(0.1)}
             >Портфолио</motion.p>
           </li>
           <li className={styles.menuItem} onClick={() => scrollToRef(reference.services)}>
             <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 0.6
-              }}
+              variants={textFromBottomAppearance(0.2)}
             >Услуги</motion.p>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.training)}>
+            <motion.p
+              variants={textFromBottomAppearance(0.3)}
+            >Обучение</motion.p>
           </li>
         </menu>
         <motion.span
-          variants={opacityAnimation}
+          variants={opacityAnimation()}
         >
           <Logo className={styles.logo}/>
         </motion.span>
         <menu className={styles.menu}>
-          <li className={styles.menuItem} onClick={() => scrollToRef(reference.maps)}>
-            <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 0.8
-              }}
-            >Контакты</motion.p>
-          </li>
           <li className={styles.menuItem} onClick={() => scrollToRef(reference.questionnaire)}>
             <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 1
-              }}
+              variants={textFromBottomAppearance(0.4)}
             >Обратная связь</motion.p>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollToRef(reference.maps)}>
+            <motion.p
+              variants={textFromBottomAppearance(0.5)}
+            >Контакты</motion.p>
           </li>
           <li className={`${styles.menuItem} ${styles.mapLink}`}>
             <motion.p
-              variants={textFromBottomAppearance}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-                delay: 1.2
-              }}
+              variants={textFromBottomAppearance(0.5)}
             >
               <Map/>
               <a href="https://goo.gl/maps/e6GZSVoznfLFvHn27" target="_blank" rel="noreferrer">Малага</a>
@@ -103,4 +68,4 @@ export const Header = ({reference, scrollToRef}) => {
       </nav>
     </motion.header>
   )
-}
+};

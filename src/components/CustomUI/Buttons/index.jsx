@@ -1,7 +1,6 @@
 import styles from './Buttons.module.css';
 import { motion } from 'framer-motion';
-import { opacityAnimation } from '../../../utils/animation'
-
+import { opacityAnimation } from '../../../utils/animation';
 
 export const CustomButton = ({type, text, link, inStyle, func}) => {
   if (inStyle === 'btn') {
@@ -11,7 +10,7 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         viewport={{once: true}}
         initial="offscreen"
         whileInView="onscreen"
-        variants={opacityAnimation}
+        variants={opacityAnimation()}
       >
         <span>{text}</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -30,7 +29,7 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         viewport={{once: true}}
         initial="offscreen"
         whileInView="onscreen"
-        variants={opacityAnimation}
+        variants={opacityAnimation()}
       >
         <span>{text}</span>
         <motion.svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -47,7 +46,7 @@ export const CustomButton = ({type, text, link, inStyle, func}) => {
         viewport={{once: true}}
         initial="offscreen"
         whileInView="onscreen"
-        variants={opacityAnimation}
+        variants={opacityAnimation()}
       >
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <polyline points="8 1 12 5 8 9"></polyline>

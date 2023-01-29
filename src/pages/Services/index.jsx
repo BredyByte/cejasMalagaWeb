@@ -1,18 +1,18 @@
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 import { CustomButton, SectionTitle } from '../../components';
 import { ReactComponent as ListStar } from '../../assets/svg/ListStar.svg';
 import { ReactComponent as Ellipse } from '../../assets/svg/ServicesEllipse.svg';
 import pic1 from '../../assets/img/portfolioImg.webp';
-import { useNavigate } from 'react-router-dom';
-
 import styles from './Services.module.css';
-import { motion } from 'framer-motion';
-import { opacityAnimation, scaleAnimation } from '../../utils/animation'
+import { opacityAnimation, scaleAnimation } from '../../utils/animation';
 
 export const Services = ({reference}) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const onClickNavigate = () => {
     navigate('/services')
-  }
+  };
   return (
     <motion.section
       ref={reference.services}
@@ -39,14 +39,13 @@ export const Services = ({reference}) => {
             </li>
           </ul>
         </aside>
-        <motion.aside className={styles.imgSideContainer} variants={opacityAnimation}>
+        <motion.aside className={styles.imgSideContainer} variants={opacityAnimation()}>
           <div className={styles.imgContentContainer}>
             <motion.div
               className={styles.img}
               style={{backgroundImage: `url("${pic1}")`, backgroundSize: "cover", backgroundPosition: "center center"}}
               variants={scaleAnimation}
-            >
-            </motion.div>
+            ></motion.div>
           </div>
           <Ellipse className={styles.ellipse}/>
         </motion.aside>
@@ -56,4 +55,4 @@ export const Services = ({reference}) => {
       </aside>
     </motion.section>
   )
-}
+};

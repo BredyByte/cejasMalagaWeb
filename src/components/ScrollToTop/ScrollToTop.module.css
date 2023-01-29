@@ -45,7 +45,7 @@
 .toTopButton p {
   position: absolute;
   color: #fff;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 @keyframes pulse {

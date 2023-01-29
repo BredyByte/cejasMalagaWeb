@@ -1,19 +1,19 @@
-import { SectionTitle, CustomButton } from '../../components'
-import styles from './Training.module.css'
 import Fancybox from '../../utils/fancybox';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
+import { SectionTitle, CustomButton } from '../../components';
+import styles from './Training.module.css';
 import { img2, img1, img3 } from '../../assets/img/trainingPageExports';
 import { ReactComponent as Ellipse1 } from '../../assets/svg/TrainingElipsWithStar1.svg';
 import { ReactComponent as Start } from '../../assets/svg/TrainingStar.svg';
-import { useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { opacityImgAnimation } from '../../utils/animation'
+import { opacityAnimation } from '../../utils/animation';
 
 export const Training = ({reference}) => {
   const navigate = useNavigate()
   const onClickNavigate = () => {
     navigate('/training')
-  }
+  };
   return (
     <section ref={reference.training} className={`${styles.root} container section`}>
       <Fancybox>
@@ -25,14 +25,7 @@ export const Training = ({reference}) => {
           whileInView="onscreen"
         >
           <a className={`${styles.imgContainer} imgContainer`} href={img1} data-fancybox="training">
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.6,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation()}>
               <img className={styles.img} src={img1} alt=""/>
             </motion.span>
             <aside className={styles.ellipse}>
@@ -40,26 +33,12 @@ export const Training = ({reference}) => {
             </aside>
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={img2} data-fancybox="training">
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.4,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation(0.3)}>
               <img className={styles.img} src={img2} alt="" />
             </motion.span>
           </a>
           <a className={`${styles.imgContainer} imgContainer`} href={img3} data-fancybox="training">
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.2,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation(0.2)}>
               <img className={styles.img} src={img3} alt="" />
             </motion.span>
           </a>
@@ -74,4 +53,4 @@ export const Training = ({reference}) => {
       </Fancybox>
     </section>
   )
-}
+};

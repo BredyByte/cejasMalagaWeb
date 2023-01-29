@@ -1,12 +1,6 @@
-import { useState } from 'react';
 import { DropDownItem } from '../';
 
-
 export const DropDownList = ({ data }) => {
-  const [isActiveId, setIsActiveId] = useState(-1);
-  const toogleIsActive = (index) => {
-    setIsActiveId(index);
-  }
 
   return (
     <ul>

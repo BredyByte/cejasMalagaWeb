@@ -7,8 +7,8 @@ import { ReactComponent as BigStar } from '../../assets/svg/BigFeetbackStar.svg'
 import Fancybox from '../../utils/fancybox';
 
 import styles from './Feedback.module.css';
-import { motion } from 'framer-motion'
-import { opacityImgAnimation } from '../../utils/animation'
+import { motion } from 'framer-motion';
+import { opacityAnimation } from '../../utils/animation';
 
 export const Feedback = ({reference}) => {
   return (
@@ -22,38 +22,17 @@ export const Feedback = ({reference}) => {
           whileInView="onscreen"
         >
           <a className={`${styles.imgContainer} imgContainer`} data-fancybox="feedback" href={feedback1}>
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.3,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation(0.3)}>
               <img className={styles.img} src={feedback1} alt="" />
             </motion.span>
           </a>
           <a className={`${styles.imgContainer} imgContainer`} data-fancybox="feedback" href={feedback2}>
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.2,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation(0.2)}>
               <img className={styles.img} src={feedback2} alt="" />
             </motion.span>
           </a>
           <a className={`${styles.imgContainer} imgContainer`} data-fancybox="feedback" href={feedback3}>
-            <motion.span
-              variants={opacityImgAnimation}
-              transition={{
-                delay: 0.4,
-                duration: 0.4,
-                type: "tween",
-              }}
-            >
+            <motion.span variants={opacityAnimation()}>
               <img className={styles.img} src={feedback3} alt="" />
             </motion.span>
           </a>
@@ -68,4 +47,4 @@ export const Feedback = ({reference}) => {
       </Fancybox>
     </section>
   )
-}
+};

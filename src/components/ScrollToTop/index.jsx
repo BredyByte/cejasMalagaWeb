@@ -1,5 +1,6 @@
-import styles from './ScrollToTop.module.css'
-import { useEffect, useState } from 'react'
+import styles from './ScrollToTop.module.css';
+import { useEffect, useState } from 'react';
+import { BsChevronUp } from 'react-icons/bs';
 
 export const ScrollToTop = () => {
   const [isShowed, setIsShowed] = useState(false);
@@ -12,21 +13,16 @@ export const ScrollToTop = () => {
       }
     })
   }, []);
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
+
   return (
-    <div className={`${styles.toTopContainer} ${isShowed && styles.active}`} onClick={scrollToTop}>
+    <a className={`${styles.toTopContainer} ${isShowed && styles.active}`} href="/#">
       <div className={styles.toTopBg}></div>
       <div className={styles.toTopButton}>
         <p>
-          <i className="fa fa-chevron-up" aria-hidden="true"></i>
+          <BsChevronUp/>
         </p>
       </div>
-    </div>
+    </a>
   )
-}
+};
 

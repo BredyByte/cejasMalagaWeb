@@ -1,30 +1,32 @@
-import { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-import styles from './ContactForm.module.css'
-import { Checkbox, CustomButton } from '../../components'
+import styles from './ContactForm.module.css';
+import { Checkbox, CustomButton } from '../../components';
 
 export const ContactForm = ({reference}) => {
-  const form = useRef()
-  const checkBox = useRef()
-  const [isChecked, setIsChecked] = useState(false)
+  const form = useRef();
+  const checkBox = useRef();
+  const [isChecked, setIsChecked] = useState(false);
 
   const defaultFormFields = {
     user_name: '',
     user_email: '',
     message: ''
-  }
-  const [formFields, setFormFields] = useState(defaultFormFields)
-  const {user_name, user_email, message} = formFields
+  };
+
+  const [formFields, setFormFields] = useState(defaultFormFields);
+  const {user_name, user_email, message} = formFields;
 
   const handleChange = (event) => {
     const {name, value} = event.target
     setFormFields({...formFields, [name]: value})
-  }
+  };
+
   const resetFormFields = () => {
     setFormFields(defaultFormFields)
     setIsChecked(false)
-  }
+  };
 
   const showAlert = () => {
     reference.alert.current.classList.add('active')
@@ -43,7 +45,7 @@ export const ContactForm = ({reference}) => {
       });
     showAlert();
     resetFormFields();
-  }
+  };
 
   return (
     <form className={styles.root} onSubmit={sendEmail} ref={form}>
@@ -85,4 +87,4 @@ export const ContactForm = ({reference}) => {
       <CustomButton text="Отправить" type="submit" inStyle="btn"/>
     </form>
   )
-}
+};

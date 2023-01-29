@@ -1,8 +1,9 @@
+import { motion } from 'framer-motion';
+
 import styles from './SecondarySlogan.module.css';
 import { ReactComponent as Stars } from '../../assets/svg/StarsSecondarySlogan.svg';
 import { ReactComponent as Ellipse } from '../../assets/svg/EllipseSecondarySlogan.svg';
-import { motion } from 'framer-motion';
-import { headerAnimation, scaleAnimation } from '../../utils/animation'
+import { xFromRightAnimation, scaleAnimation } from '../../utils/animation';
 
 export const SecondarySlogan = () => {
   return (
@@ -14,10 +15,7 @@ export const SecondarySlogan = () => {
     >
       <Ellipse className={styles.ellipse}/>
       <Stars className={styles.stars}/>
-      <motion.h2
-        className={styles.titleContainer}
-        variants={headerAnimation}
-      >
+      <motion.h2 className={styles.titleContainer} variants={xFromRightAnimation}>
         <aside className={styles.titleItem}>
           <p>Знаю секрет</p>
         </aside>
